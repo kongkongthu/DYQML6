@@ -1,0 +1,539 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "Microsoft YaHei",
+		"spacing": 10,
+		"columns": 1,
+		"titlePos": "left",
+		"layout": "column",
+		"ctrlList": [
+			{
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "Radio Button Group 1 (Default Color and Size):",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "Option 1",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn1-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn4-checked", "radio-btn2-checked", "radio-btn3-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 2",
+						"checked": true,
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn2-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn1-checked", "radio-btn4-checked", "radio-btn3-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 3",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn3-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn1-checked", "radio-btn2-checked", "radio-btn4-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 4",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn4-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn1-checked", "radio-btn2-checked", "radio-btn3-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "Radio Button Group 2 (Specified Color):",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "Option 1",
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn5-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn6-checked", "radio-btn7-checked", "radio-btn8-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 2",
+						"checked": true,
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn6-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn5-checked", "radio-btn7-checked", "radio-btn8-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 3",
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn7-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn5-checked", "radio-btn6-checked", "radio-btn8-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 4",
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn8-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn5-checked", "radio-btn6-checked", "radio-btn7-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "Cross-Group Radio Button Options:",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYText",
+				"height": 16,
+				"text": "Group3:",
+				"fontSize": 14
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "Option 1",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn9-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 2",
+						"checked": true,
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn10-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 3",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn11-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 4",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn12-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 16,
+				"text": "Group4:",
+				"fontSize": 14
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "Option 5",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn13-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 6",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn14-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 7",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn15-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 8",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn16-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "Radio Button Group 5 (Specified Font Color):",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "Option 1",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn17-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn18-checked", "radio-btn19-checked", "radio-btn20-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 2",
+						"checked": true,
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn18-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn17-checked", "radio-btn19-checked", "radio-btn20-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 3",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn19-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn17-checked", "radio-btn18-checked", "radio-btn20-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 4",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn20-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn17-checked", "radio-btn18-checked", "radio-btn19-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "Radio Button Group 6 (Specified Size):",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 100,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 10,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "Option 1",
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn21-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn22-checked", "radio-btn23-checked", "radio-btn24-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 2",
+						"checked": true,
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn22-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn21-checked", "radio-btn23-checked", "radio-btn24-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 3",
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn23-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn21-checked", "radio-btn22-checked", "radio-btn24-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "Option 4",
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn24-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn21-checked", "radio-btn22-checked", "radio-btn23-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}
+				]
+			}
+		]
+	}
+}

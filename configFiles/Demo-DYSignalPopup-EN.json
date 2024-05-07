@@ -1,0 +1,537 @@
+{
+	"appInfo": {
+		"width": 1024,
+		"height": 768
+	},
+	"topArea": {
+		"flickable": false,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"color": "#A1E4FC",
+		"showTip": true,
+		"rows": 4,
+		"fontFamily": "Microsoft YaHei",
+		"columns": 1,
+		"spacing": 0,
+		"ctrlList": [
+			{
+				"ctrlType": "DYText",
+				"dyName": "title",
+				"anchors": {
+					"top": "parent.top",
+					"left": "parent.left",
+					"right": "parent.right"
+				},
+				"text": "DYSignal and Pop-up Display",
+				"height": 90,
+				"textHAlignment": "center",
+				"textVAlignment": "center",
+				"color": "#00000000",
+				"fontColor": "#000",
+				"fontSize": 28,
+				"fontBold": true
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "popupArea",
+				"anchors": {
+					"top": "title.bottom",
+					"left": "parent.left",
+					"leftMargin": 30,
+					"right": "parent.horizontalCenter",
+					"rightMargin": 10,
+					"bottom": "parent.bottom",
+					"bottomMargin": 30
+				},
+				"color": "#555",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYText",
+						"dyName": "popupAreatitle",
+						"anchors": {
+							"top": "parent.top",
+							"left": "parent.left",
+							"right": "parent.right"
+						},
+						"text": "Pop-up Area",
+						"height": 40,
+						"textHAlignment": "center",
+						"textVAlignment": "center",
+						"color": "#00000000",
+						"fontColor": "#dcdcdc",
+						"fontSize": 28,
+						"fontBold": true
+					}, {
+						"ctrlType": "DYSigPopUp",
+						"anchors": {
+							"top": "popupAreatitle.bottom",
+							"left": "parent.left",
+							"right": "parent.right",
+							"bottom": "parent.bottom",
+							"leftMargin": 20,
+							"rightMargin": 20
+						},
+						"color": "#00000000"
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "noteArea",
+				"anchors": {
+					"top": "title.bottom",
+					"left": "parent.horizontalCenter",
+					"leftMargin": 10,
+					"right": "parent.right",
+					"rightMargin": 30
+				},
+				"height": 200,
+				"color": "#555",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYText",
+						"dyName": "noteText",
+						"anchors": {
+							"top": "parent.top",
+							"leftMargin": 15,
+							"left": "parent.left",
+							"right": "parent.right",
+							"bottom": "parent.bottom"
+						},
+						"text": "Note: DYSignal is the object of signal transmited \nin DYQML system. Each controller inherit from \nDControllerBase can generate user event and \nemit a signal including DYSignal info. Press the \ncontrols below will emit a DYSignal, and the info \nwill be displayed in the Pop-up Area.",
+						"height": 40,
+						"textHAlignment": "left",
+						"textVAlignment": "center",
+						"color": "#00000000",
+						"fontColor": "#dcdcdc",
+						"fontSize": 18,
+						"fontBold": true
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "controllerArea",
+				"anchors": {
+					"left": "noteArea.left",
+					"top": "noteArea.bottom",
+					"topMargin": 20,
+					"right": "noteArea.right",
+					"bottom": "parent.bottom",
+					"bottomMargin": 30
+				},
+				"color": "#555",
+				"columns": 4,
+				"rows": 6,
+				"layout": "grid",
+				"padding": 20,
+				"spacing": 20,
+				"rowSpacing": 10,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYButton",
+						"name": "Hide",
+						"dyName": "btn1",
+						"tipText": "Press to hide controls below",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "sig-hide-all-controls"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-show-all-controls"
+						],
+						"disableByList": [
+							"sig-hide-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"enabled": false,
+						"name": "Show",
+						"dyName": "btn2",
+						"tipText": "Press to Show controls below",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "sig-show-all-controls"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-hide-all-controls"
+						],
+						"disableByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "Disable",
+						"dyName": "btn3",
+						"tipText": "Press to disable controls below",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "sig-disable-all-controls"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"enabled": false,
+						"name": "Enable",
+						"dyName": "btn4",
+						"tipText": "Press to enalbe controls below",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "sig-enable-all-controls"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-disable-all-controls"
+						],
+						"disableByList": [
+							"sig-enable-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "Btn1",
+						"dyName": "btn5",
+						"tipText": "Test button 1",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "test-btn1-pressed"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "Btn2",
+						"dyName": "btn6",
+						"tipText": "Test button 2",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "test-btn2-pressed"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "Btn3",
+						"dyName": "btn7",
+						"tipText": "Test button 3",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "test-btn3-pressed"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "Btn4",
+						"dyName": "btn8",
+						"tipText": "Test button 4",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "test-btn4-pressed"
+						},
+						"width": 90,
+						"height": 40,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "radioArea",
+						"tipText": "This is a area contain 4 option",
+						"borderWidth": 1,
+						"anchors": {
+							"top": "comboBox.bottom",
+							"left": "parent.left",
+							"leftMargin": 20,
+							"right": "parent.right",
+							"rightMargin": 32,
+							"topMargin": 20
+						},
+						"radius": 5,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"x": 100,
+						"y": 300,
+						"width": 400,
+						"height": 80,
+						"layout": "grid",
+						"columns": 2,
+						"rows": 3,
+						"padding": 5,
+						"spacing": 20,
+						"rowSpacing": 5,
+						"color": "#00000000",
+						"borderColor": "#dcdcdc",
+						"ctrlList": [
+							{
+								"ctrlType": "DYRadioButton",
+								"name": "Option1",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "radio-btn1-checked",
+									"destCode": 100
+								},
+								"unCheckedByList": [
+									"radio-btn4-checked", "radio-btn2-checked", "radio-btn3-checked"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "Option2",
+								"checked": true,
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "radio-btn2-checked",
+									"destCode": 100
+								},
+								"unCheckedByList": [
+									"radio-btn1-checked", "radio-btn4-checked", "radio-btn3-checked"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "Option3",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "radio-btn3-checked",
+									"destCode": 100
+								},
+								"unCheckedByList": [
+									"radio-btn1-checked", "radio-btn2-checked", "radio-btn4-checked"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "Option4",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "radio-btn4-checked",
+									"destCode": 100
+								},
+								"unCheckedByList": [
+									"radio-btn1-checked", "radio-btn2-checked", "radio-btn3-checked"
+								],
+								"width": 120
+							}
+						]
+					}, {
+						"ctrlType": "DYComboBox",
+						"dyName": "comboBox",
+						"name": "ComboBox",
+						"tipText": "A ComboBox Control deliver a more complex signal.",
+						"anchors": {
+							"top": "parent.top",
+							"left": "parent.left",
+							"leftMargin": 20,
+							"right": "parent.right",
+							"rightMargin": 32,
+							"topMargin": 120
+						},
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"dSignal": {
+							"sigId": "comboBox-choice-changed",
+							"destCode": 100
+						},
+						"itemList": [
+							"Option1", "Option2", "Option3"
+						],
+						"attachedValue": [
+							1, 2, 3
+						],
+						"width": 160,
+						"color": "#00000000"
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "radioArea",
+						"tipText": "This is a area contain 4 switch",
+						"borderWidth": 1,
+						"anchors": {
+							"top": "radioArea.bottom",
+							"left": "parent.left",
+							"leftMargin": 20,
+							"right": "parent.right",
+							"rightMargin": 32,
+							"topMargin": 20
+						},
+						"radius": 5,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"x": 100,
+						"y": 300,
+						"width": 400,
+						"height": 80,
+						"layout": "grid",
+						"columns": 2,
+						"rows": 3,
+						"padding": 10,
+						"spacing": 40,
+						"rowSpacing": 5,
+						"color": "#00000000",
+						"borderColor": "#dcdcdc",
+						"ctrlList": [
+							{
+								"ctrlType": "DYSwitch",
+								"name": "Switch 1",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "radio-btn1-checked",
+									"destCode": 100
+								},
+								"width": 100
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "Switch 2",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "radio-btn2-checked",
+									"destCode": 100
+								},
+								"width": 100
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "Switch 3",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "radio-btn3-checked",
+									"destCode": 100
+								},
+								"width": 100
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "Switch 4",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "radio-btn4-checked",
+									"destCode": 100
+								},
+								"width": 100
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,538 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "微软雅黑",
+		"spacing": 10,
+		"columns": 1,
+		"layout": "column",
+		"ctrlList": [
+			{
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "单选选项组1（默认颜色）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项1",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn1-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn4-checked", "radio-btn2-checked", "radio-btn3-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项2",
+						"checked": true,
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn2-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn1-checked", "radio-btn4-checked", "radio-btn3-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项3",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn3-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn1-checked", "radio-btn2-checked", "radio-btn4-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项4",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn4-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn1-checked", "radio-btn2-checked", "radio-btn3-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "单选选项组2（指定颜色）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项5",
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn5-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn6-checked", "radio-btn7-checked", "radio-btn8-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项6",
+						"checked": true,
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn6-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn5-checked", "radio-btn7-checked", "radio-btn8-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项7",
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn7-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn5-checked", "radio-btn6-checked", "radio-btn8-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项8",
+						"radioColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn8-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn5-checked", "radio-btn6-checked", "radio-btn7-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "跨组单选选项：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYText",
+				"height": 16,
+				"text": "组3:",
+				"fontSize": 14
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项9",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn9-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项10",
+						"checked": true,
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn10-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项11",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn11-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项12",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn12-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 16,
+				"text": "组4:",
+				"fontSize": 14
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项13",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn13-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn14-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项14",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn14-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn15-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项15",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn15-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn16-checked"
+						],
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项16",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn16-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn9-checked", "radio-btn10-checked", "radio-btn11-checked", "radio-btn12-checked", "radio-btn13-checked", "radio-btn14-checked", "radio-btn15-checked"
+						],
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "单选选项组5（指定字体颜色）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项17",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn17-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn18-checked", "radio-btn19-checked", "radio-btn20-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项18",
+						"checked": true,
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn18-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn17-checked", "radio-btn19-checked", "radio-btn20-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项19",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn19-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn17-checked", "radio-btn18-checked", "radio-btn20-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项20",
+						"height": 30,
+						"dSignal": {
+							"sigId": "radio-btn20-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn17-checked", "radio-btn18-checked", "radio-btn19-checked"
+						],
+						"fontColor": "#FFCCFF",
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "单选选项组6（指定尺寸）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 100,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"rows": 3,
+				"padding": 5,
+				"spacing": 20,
+				"rowSpacing": 10,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项21",
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn21-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn22-checked", "radio-btn23-checked", "radio-btn24-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项22",
+						"checked": true,
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn22-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn21-checked", "radio-btn23-checked", "radio-btn24-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项23",
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn23-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn21-checked", "radio-btn22-checked", "radio-btn24-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYRadioButton",
+						"name": "单选选项24",
+						"height": 35,
+						"dSignal": {
+							"sigId": "radio-btn24-checked",
+							"destCode": 100
+						},
+						"unCheckedByList": [
+							"radio-btn21-checked", "radio-btn22-checked", "radio-btn23-checked"
+						],
+						"fontSize": 24,
+						"width": 170
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,513 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "Microsoft YaHei",
+		"spacing": 10,
+		"columns": 8,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#40000000",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#40ff0000",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#4000ff00",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#400000ff",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#40ff0000",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#40000ff0",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#40ff00ff",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"pressedBkColor": "#4000ffff",
+				"trueIconPath": "./images/svgs/test/信息2-绿.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 45,
+				"height": 45,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#40000000",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#40ff0000",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#4000ff00",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#400000ff",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#40ff0000",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#40000ff0",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#40ff00ff",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 60,
+				"height": 60,
+				"pressedBkColor": "#4000ffff",
+				"radius": 6,
+				"trueIconPath": "./images/svgs/test/信息2-绿-128.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 80,
+				"height": 80,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#40000000",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#40ff0000",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#4000ff00",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#400000ff",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#40ff0000",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#40000ff0",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#40ff00ff",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}, {
+				"ctrlType": "DYIconBtn",
+				"width": 96,
+				"height": 96,
+				"pressedBkColor": "#4000ffff",
+				"radius": 12,
+				"trueIconPath": "./images/svgs/test/信息2-蓝-64.svg",
+				"falseIconPath": "./images/svgs/test/信息2-白-64.svg",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				}
+			}
+		]
+	}
+}

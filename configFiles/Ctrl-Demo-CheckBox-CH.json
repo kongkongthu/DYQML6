@@ -1,0 +1,337 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"layout": "column",
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "微软雅黑",
+		"spacing": 10,
+		"columns": 1,
+		"titlePos": "left",
+		"ctrlList": [
+			{
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "多选选项组1（默认颜色与尺寸）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"padding": 5,
+				"rows": 3,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项1",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box1",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项2",
+						"checked": true,
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box2",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项3",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box3",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项4",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box4",
+							"destCode": 100
+						},
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "多选选项组2（指定颜色）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"padding": 5,
+				"rows": 3,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项1",
+						"ctrlColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box5-check",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项2",
+						"checked": true,
+						"ctrlColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box6-check",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项3",
+						"ctrlColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box7-check",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项4",
+						"ctrlColor": "#33CC99",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box8-check",
+							"destCode": 100
+						},
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "多选选项组3（指定字体颜色）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 80,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"padding": 5,
+				"rows": 3,
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项1",
+						"fontColor": "#FFCCFF",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box5-check",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项2",
+						"checked": true,
+						"fontColor": "#FFCCFF",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box6-check",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项3",
+						"fontColor": "#FFCCFF",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box7-check",
+							"destCode": 100
+						},
+						"width": 120
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项4",
+						"fontColor": "#FFCCFF",
+						"height": 30,
+						"dSignal": {
+							"sigId": "check-box8-check",
+							"destCode": 100
+						},
+						"width": 120
+					}
+				]
+			}, {
+				"ctrlType": "DYText",
+				"height": 20,
+				"text": "多选选项组4（改变尺寸与字体大小）：",
+				"fontSize": 18
+			}, {
+				"ctrlType": "DYArea",
+				"width": 400,
+				"height": 100,
+				"borderWidth": 2,
+				"layout": "grid",
+				"columns": 2,
+				"padding": 5,
+				"rows": 3,
+				"spacing": 20,
+				"rowSpacing": 8,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#00A1B3",
+				"ctrlList": [
+					{
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项1",
+						"height": 35,
+						"dSignal": {
+							"sigId": "check-box1",
+							"destCode": 100
+						},
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项2",
+						"checked": true,
+						"height": 35,
+						"dSignal": {
+							"sigId": "check-box2",
+							"destCode": 100
+						},
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项3",
+						"height": 35,
+						"dSignal": {
+							"sigId": "check-box3",
+							"destCode": 100
+						},
+						"fontSize": 24,
+						"width": 170
+					}, {
+						"ctrlType": "DYCheckBox",
+						"name": "多选选项4",
+						"height": 35,
+						"dSignal": {
+							"sigId": "check-box4",
+							"destCode": 100
+						},
+						"fontSize": 24,
+						"width": 170
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,161 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "微软雅黑",
+		"spacing": 20,
+		"columns": 1,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYComboBox",
+				"dSignal": {
+					"sigId": "current-charging-device",
+					"destCode": 100
+				},
+				"itemList": [
+					"选项一", "选项二", "选项三"
+				],
+				"attachedValue": [
+					1, 2, 3
+				],
+				"width": 280
+			}, {
+				"ctrlType": "DYComboBox",
+				"name": "下拉菜单",
+				"dSignal": {
+					"sigId": "current-charging-device",
+					"destCode": 100
+				},
+				"itemList": [
+					"选项一", "选项二", "选项三"
+				],
+				"attachedValue": [
+					1, 2, 3
+				],
+				"width": 280
+			}, {
+				"ctrlType": "DYComboBox",
+				"name": "指定字体颜色",
+				"fontColor": "#499500",
+				"dSignal": {
+					"sigId": "current-charging-device",
+					"destCode": 100
+				},
+				"itemList": [
+					"Option1", "Option2", "Option3"
+				],
+				"attachedValue": [
+					1, 2, 3
+				],
+				"width": 280
+			}, {
+				"ctrlType": "DYComboBox",
+				"name": "指定背景色",
+				"bkColor": "#a66b00",
+				"dSignal": {
+					"sigId": "current-charging-device",
+					"destCode": 100
+				},
+				"itemList": [
+					"Option1", "Option2", "Option3"
+				],
+				"attachedValue": [
+					1, 2, 3
+				],
+				"width": 280
+			}, {
+				"ctrlType": "DYComboBox",
+				"name": "改变高度",
+				"dSignal": {
+					"sigId": "current-charging-device",
+					"destCode": 100
+				},
+				"itemList": [
+					"选项一", "选项二", "选项三"
+				],
+				"attachedValue": [
+					1, 2, 3
+				],
+				"height": 40,
+				"width": 280
+			}, {
+				"ctrlType": "DYComboBox",
+				"name": "字体尺寸=20",
+				"fontSize": 20,
+				"dSignal": {
+					"sigId": "current-charging-device",
+					"destCode": 100
+				},
+				"itemList": [
+					"Option1", "Option2", "Option3"
+				],
+				"attachedValue": [
+					1, 2, 3
+				],
+				"height": 40,
+				"width": 280
+			}
+		]
+	}
+}

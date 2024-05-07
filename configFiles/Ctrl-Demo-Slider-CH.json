@@ -1,0 +1,167 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "微软雅黑",
+		"spacing": 10,
+		"columns": 1,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYSlider",
+				"showValue": false,
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "滑块2",
+				"showValue": false,
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "滑块4",
+				"max": "",
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "指定max",
+				"max": 100.5,
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "指定minMax",
+				"min": -100.5,
+				"max": 100.5,
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "指定默认值",
+				"min": -100.5,
+				"max": 100.5,
+				"defaultValue": 40,
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "1位小数点",
+				"min": -100.5,
+				"max": 100.5,
+				"defaultValue": 40,
+				"decimalNum": 1,
+				"height": 30,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "显示器宽度",
+				"min": -100.5,
+				"max": 100.5,
+				"defaultValue": 40,
+				"decimalNum": 3,
+				"height": 30,
+				"valueWidth": 70,
+				"wrap": true,
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "发送信号",
+				"min": -100.5,
+				"max": 100.5,
+				"defaultValue": 40,
+				"decimalNum": 3,
+				"height": 30,
+				"wrap": true,
+				"dSignal": {
+					"sigId": "SLIDER1-VALUE-CHANGED",
+					"destCode": 101
+				},
+				"width": 400
+			}, {
+				"ctrlType": "DYSlider",
+				"name": "改变高度",
+				"min": -100.5,
+				"max": 100.5,
+				"defaultValue": 40,
+				"decimalNum": 3,
+				"height": 40,
+				"wrap": true,
+				"width": 400
+			}
+		]
+	}
+}

@@ -1,0 +1,224 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "Microsoft YaHei",
+		"spacing": 10,
+		"columns": 4,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYSwitch",
+				"width": 50,
+				"dSignal": {
+					"sigId": "DYSWITCH-1"
+				}
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "On",
+				"offText": "Off",
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "In",
+				"offText": "Out",
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "Up",
+				"offText": "Dn",
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"defaultValue": true,
+				"width": 50,
+				"dSignal": {
+					"sigId": "DYSWITCH-1"
+				}
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "On",
+				"offText": "Off",
+				"defaultValue": true,
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "In",
+				"offText": "Out",
+				"defaultValue": true,
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "Up",
+				"offText": "Dn",
+				"defaultValue": true,
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch5",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch6",
+				"onColor": "#17dc7d",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch7",
+				"onColor": "#7d17dc",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch8",
+				"onColor": "#dc7d17",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"defaultValue": true,
+				"name": "Switch5",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"defaultValue": true,
+				"name": "Switch6",
+				"onColor": "#17dc7d",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"defaultValue": true,
+				"name": "Switch7",
+				"onColor": "#7d17dc",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"defaultValue": true,
+				"name": "Switch8",
+				"onColor": "#dc7d17",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch9",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch10",
+				"offColor": "#718093",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch11",
+				"offColor": "#192a56",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch12",
+				"offColor": "#2c2c54",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch13",
+				"fontColor": "red",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch14",
+				"fontColor": "#feca57",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch15",
+				"fontColor": "#25CCF7",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch16",
+				"fontColor": "#ff9ff3",
+				"width": 100
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch17",
+				"fontSize": 16,
+				"width": 130,
+				"height": 35
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch18",
+				"fontSize": 16,
+				"width": 130,
+				"height": 35
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch19",
+				"fontSize": 16,
+				"width": 130,
+				"height": 35
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "Switch20",
+				"fontSize": 16,
+				"width": 130,
+				"height": 35
+			}
+		]
+	}
+}

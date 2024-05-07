@@ -1,0 +1,110 @@
+{
+	"appSetting": {
+		"width": 1300,
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		],
+		"dyValues": {
+			"testValue1": 1,
+			"testString1": "白日依山尽"
+		}
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 4,
+		"fontFamily": "Microsoft YaHei",
+		"columns": 1,
+		"spacing": 30,
+		"titlePos": "left",
+		"layout": "column",
+		"ctrlList": [
+			{
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 12
+			}, {
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 16
+			}, {
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 20
+			}, {
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 24
+			}, {
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 32
+			}, {
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 48
+			}, {
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 60
+			}, {
+				"ctrlType": "DYText",
+				"text": "This is a text demonstration.",
+				"fontSize": 96
+			}
+		]
+	}
+}

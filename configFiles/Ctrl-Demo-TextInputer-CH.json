@@ -1,0 +1,158 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "微软雅黑",
+		"spacing": 10,
+		"columns": 2,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYTextInput",
+				"width": 200
+			}, {
+				"ctrlType": "DYPlaceholder"
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "文本",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "密码",
+				"isPassword": true,
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "数字输入",
+				"wrap": true,
+				"isNumber": true,
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "文本居中",
+				"textHAlignment": "center",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "文本靠右",
+				"textHAlignment": "right",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "黄色字体",
+				"fontColor": "#ffff00",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "绿色字体",
+				"fontColor": "#00ff00",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "红色字体",
+				"fontColor": "#ff0000",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "深黄背景",
+				"bkColor": "#330",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "深绿背景",
+				"bkColor": "#030",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "深红背景",
+				"bkColor": "#300",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "线宽为1(默认)",
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "线宽为2",
+				"inputBorderWidth": 2,
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "线宽为3",
+				"inputBorderWidth": 3,
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "文字不包围",
+				"height": 70,
+				"width": 200
+			}, {
+				"ctrlType": "DYTextInput",
+				"name": "文字包围",
+				"height": 70,
+				"wrap": true,
+				"width": 200
+			}
+		]
+	}
+}

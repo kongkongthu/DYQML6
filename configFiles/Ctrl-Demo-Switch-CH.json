@@ -1,0 +1,224 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "微软雅黑",
+		"spacing": 10,
+		"columns": 4,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYSwitch",
+				"width": 50,
+				"dSignal": {
+					"sigId": "DYSWITCH-1"
+				}
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "开",
+				"offText": "关",
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "里",
+				"offText": "外",
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "上",
+				"offText": "下",
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"defaultValue": true,
+				"width": 50,
+				"dSignal": {
+					"sigId": "DYSWITCH-1"
+				}
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "开",
+				"offText": "关",
+				"defaultValue": true,
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "里",
+				"offText": "外",
+				"defaultValue": true,
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"onText": "上",
+				"offText": "下",
+				"defaultValue": true,
+				"width": 50
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关5",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关6",
+				"onColor": "#17dc7d",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关7",
+				"onColor": "#7d17dc",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关8",
+				"onColor": "#dc7d17",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关5",
+				"defaultValue": true,
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关6",
+				"onColor": "#17dc7d",
+				"defaultValue": true,
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关7",
+				"onColor": "#7d17dc",
+				"defaultValue": true,
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关8",
+				"onColor": "#dc7d17",
+				"defaultValue": true,
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关9",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关10",
+				"offColor": "#718093",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关11",
+				"offColor": "#192a56",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关12",
+				"offColor": "#2c2c54",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关13",
+				"fontColor": "red",
+				"width": 85
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关14",
+				"fontColor": "#feca57",
+				"width": 90
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关15",
+				"fontColor": "#25CCF7",
+				"width": 90
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关16",
+				"fontColor": "#ff9ff3",
+				"width": 90
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关17",
+				"fontSize": 16,
+				"width": 110,
+				"height": 35
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关18",
+				"fontSize": 16,
+				"width": 110,
+				"height": 35
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关19",
+				"fontSize": 16,
+				"width": 110,
+				"height": 35
+			}, {
+				"ctrlType": "DYSwitch",
+				"name": "开关20",
+				"fontSize": 16,
+				"width": 110,
+				"height": 35
+			}
+		]
+	}
+}

@@ -1,0 +1,1187 @@
+{
+	"appSetting": {
+		"width": 1280,
+		"height": 700,
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-a1",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-a2",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-a3",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-b1",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-b2",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-b3",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-c1",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-c2",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-c3",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": false,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"color": "#080212",
+		"showTip": true,
+		"rows": 4,
+		"fontFamily": "Microsoft YaHei",
+		"columns": 1,
+		"spacing": 0,
+		"layout": "column",
+		"dyName": "mothor",
+		"ctrlList": [
+			{
+				"ctrlType": "DYArea",
+				"dyName": "headArea",
+				"tipText": "headArea",
+				"anchors": {
+					"top": "mothor.top",
+					"left": "mothor.left",
+					"right": "mothor.right"
+				},
+				"width": 1000,
+				"height": 60,
+				"color": "#00000000",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYText",
+						"tipText": "APPBrandName",
+						"anchors": {
+							"left": "parent.left",
+							"leftMargin": 20,
+							"verticalCenter": "parent.verticalCenter"
+						},
+						"text": "brandName",
+						"fontSize": 32,
+						"width": 180,
+						"height": 50
+					}, {
+						"ctrlType": "DYText",
+						"tipText": "PageTitle",
+						"anchors": {
+							"horizontalCenter": "parent.horizontalCenter",
+							"verticalCenter": "parent.verticalCenter"
+						},
+						"text": "Sowing GUI",
+						"fontSize": 35,
+						"fontBold": true,
+						"height": 50
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "iconArea",
+						"tipText": "iconArea",
+						"anchors": {
+							"verticalCenter": "parent.verticalCenter",
+							"right": "parent.right"
+						},
+						"width": 400,
+						"height": 50,
+						"color": "#00000000",
+						"rows": 3,
+						"layout": "row",
+						"layoutReverse": true,
+						"spacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYText",
+								"text": "23℃",
+								"tipText": "Temperature",
+								"fontSize": 35,
+								"fontBold": false
+							}, {
+								"ctrlType": "DYIconBtn",
+								"tipText": "Weather",
+								"width": 45,
+								"height": 45,
+								"trueIconPath": "./images/svgs/test/天气.svg",
+								"falseIconPath": "./images/svgs/test/天气.svg",
+								"dSignal": {
+									"sigId": "not-hold-complete-btn"
+								}
+							}, {
+								"ctrlType": "DYIconBtn",
+								"tipText": "BlueTooth",
+								"width": 45,
+								"height": 45,
+								"trueIconPath": "./images/svgs/test/蓝牙-白.svg",
+								"falseIconPath": "./images/svgs/test/蓝牙-灰2.svg",
+								"dSignal": {
+									"sigId": "not-hold-complete-btn"
+								}
+							}
+						]
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "leftArea",
+				"tipText": "leftArea",
+				"anchors": {
+					"top": "headArea.bottom",
+					"left": "mothor.left",
+					"leftMargin": 10,
+					"bottom": "mothor.bottom",
+					"bottomMargin": 10
+				},
+				"radius": 10,
+				"borderWidth": 2,
+				"borderColor": "#1547a5",
+				"width": 300,
+				"height": 100,
+				"color": "#50002663",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYArea",
+						"dyName": "topCircle",
+						"tipText": "Speed",
+						"anchors": {
+							"top": "parent.top",
+							"horizontalCenter": "parent.horizontalCenter",
+							"topMargin": 65
+						},
+						"radius": 100,
+						"borderWidth": 2,
+						"borderColor": "red",
+						"width": 200,
+						"height": 200,
+						"color": "#00000000",
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYText",
+								"dyName": "data",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"horizontalCenter": "parent.horizontalCenter",
+									"verticalCenterOffset": -10
+								},
+								"text": 32.5,
+								"textHAlignment": "center",
+								"fontSize": 45,
+								"fontBold": false,
+								"width": 50,
+								"height": 70
+							}, {
+								"ctrlType": "DYText",
+								"dyName": "unit",
+								"anchors": {
+									"top": "data.bottom",
+									"topMargin": -5,
+									"horizontalCenter": "parent.horizontalCenter"
+								},
+								"text": "km/h",
+								"textHAlignment": "center",
+								"fontSize": 20,
+								"fontBold": false,
+								"width": 200,
+								"height": 50,
+								"fontColor": "#888",
+								"color": ""
+							}
+						]
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "bomCircle",
+						"tipText": "qualification",
+						"anchors": {
+							"bottom": "parent.bottom",
+							"bottomMargin": 65,
+							"horizontalCenter": "parent.horizontalCenter"
+						},
+						"radius": 100,
+						"borderWidth": 2,
+						"borderColor": "green",
+						"width": 200,
+						"height": 200,
+						"color": "#00000000",
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYText",
+								"dyName": "data",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"horizontalCenter": "parent.horizontalCenter",
+									"verticalCenterOffset": -10
+								},
+								"text": "99%",
+								"textHAlignment": "center",
+								"fontSize": 45,
+								"fontBold": false,
+								"width": 50,
+								"height": 70
+							}, {
+								"ctrlType": "DYText",
+								"dyName": "unit",
+								"anchors": {
+									"top": "data.bottom",
+									"topMargin": -5,
+									"horizontalCenter": "parent.horizontalCenter"
+								},
+								"text": "qualified",
+								"textHAlignment": "center",
+								"fontSize": 20,
+								"fontBold": false,
+								"width": 200,
+								"height": 50,
+								"fontColor": "#888",
+								"color": ""
+							}
+						]
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "midTopArea",
+				"tipText": "midTopArea",
+				"anchors": {
+					"top": "headArea.bottom",
+					"left": "leftArea.right",
+					"leftMargin": 20,
+					"right": "rightArea.left",
+					"rightMargin": 20
+				},
+				"radius": 10,
+				"borderWidth": 2,
+				"borderColor": "#272727",
+				"clip": true,
+				"width": 300,
+				"height": 250,
+				"color": "#272727",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYArea",
+						"dyName": "top",
+						"tipText": "Plantation area1",
+						"anchors": {
+							"top": "parent.top",
+							"left": "parent.left",
+							"right": "parent.right"
+						},
+						"width": 200,
+						"height": 130,
+						"color": "#00000000",
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYArea",
+								"dyName": "indexArea",
+								"tipText": "Index",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"left": "parent.left",
+									"leftMargin": 20
+								},
+								"radius": 35,
+								"borderWidth": 1,
+								"borderColor": "#3045a0",
+								"width": 70,
+								"height": 70,
+								"color": "#00000000",
+								"rows": 3,
+								"layout": "row",
+								"layoutReverse": true,
+								"spacing": 5,
+								"invisibleByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								],
+								"ctrlList": [
+									{
+										"ctrlType": "DYText",
+										"text": 1,
+										"anchors": {
+											"fill": "parent"
+										},
+										"textHAlignment": "center",
+										"textVAlignment": "center",
+										"fontSize": 40,
+										"fontBold": false,
+										"width": 50,
+										"height": 50
+									}
+								]
+							}, {
+								"ctrlType": "DYText",
+								"dyName": "",
+								"tipText": "Density of grain",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"left": "indexArea.right",
+									"leftMargin": 40
+								},
+								"text": 25.8,
+								"fontSize": 50,
+								"fontBold": false,
+								"width": 50,
+								"height": 70
+							}, {
+								"ctrlType": "DYText",
+								"dyName": "",
+								"tipText": "Unit of Density",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"right": "parent.right",
+									"leftMargin": 20
+								},
+								"text": "Grain/sqm",
+								"fontSize": 40,
+								"fontBold": false,
+								"x": 15,
+								"y": 5,
+								"width": 220,
+								"height": 50,
+								"fontColor": "#888",
+								"color": ""
+							}
+						]
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "line",
+						"tipText": "Plantation area1",
+						"anchors": {
+							"top": "top.bottom",
+							"left": "parent.left",
+							"right": "parent.right"
+						},
+						"width": 200,
+						"height": 1,
+						"color": "#080212",
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						]
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "bom",
+						"tipText": "Plantation area1",
+						"anchors": {
+							"top": "top.bottom",
+							"bottom": "parent.bottom",
+							"left": "parent.left",
+							"right": "parent.right",
+							"topMargin": 1
+						},
+						"width": 200,
+						"height": 200,
+						"color": "#00000000",
+						"leftPadding": 60,
+						"topPadding": 35,
+						"rows": 3,
+						"layout": "row",
+						"spacing": 40,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYButton",
+								"name": "Re-Sow",
+								"tipText": "Sow again",
+								"radius": 25,
+								"dSignal": {
+									"sigId": "btn-test-signal-two"
+								},
+								"fontSize": 24,
+								"width": 130,
+								"height": 50,
+								"borderColor": "#001025",
+								"color": "#001025",
+								"disableByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								]
+							}, {
+								"ctrlType": "DYButton",
+								"name": "qualified",
+								"tipText": "qualified",
+								"radius": 25,
+								"dSignal": {
+									"sigId": "btn-test-signal-two"
+								},
+								"fontSize": 24,
+								"width": 130,
+								"height": 50,
+								"borderColor": "#00c16e",
+								"color": "#00c16e",
+								"disableByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								]
+							}, {
+								"ctrlType": "DYButton",
+								"name": "Miss",
+								"tipText": "Miss",
+								"radius": 25,
+								"dSignal": {
+									"sigId": "btn-test-signal-two"
+								},
+								"fontSize": 24,
+								"width": 130,
+								"height": 50,
+								"borderColor": "#001025",
+								"color": "#001025",
+								"disableByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								]
+							}
+						]
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "midBomArea",
+				"tipText": "midBomArea",
+				"anchors": {
+					"top": "midTopArea.bottom",
+					"left": "midTopArea.left",
+					"topMargin": 20,
+					"right": "midTopArea.right"
+				},
+				"radius": 10,
+				"borderWidth": 2,
+				"borderColor": "#272727",
+				"clip": true,
+				"width": 300,
+				"height": 250,
+				"color": "#272727",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYArea",
+						"dyName": "top",
+						"tipText": "Plantation area2",
+						"anchors": {
+							"top": "parent.top",
+							"left": "parent.left",
+							"right": "parent.right"
+						},
+						"width": 200,
+						"height": 130,
+						"color": "#00000000",
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYArea",
+								"dyName": "indexArea",
+								"tipText": "Index",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"left": "parent.left",
+									"leftMargin": 20
+								},
+								"radius": 35,
+								"borderWidth": 1,
+								"borderColor": "#3045a0",
+								"width": 70,
+								"height": 70,
+								"color": "#00000000",
+								"rows": 3,
+								"layout": "row",
+								"layoutReverse": true,
+								"spacing": 5,
+								"invisibleByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								],
+								"ctrlList": [
+									{
+										"ctrlType": "DYText",
+										"text": 2,
+										"anchors": {
+											"fill": "parent"
+										},
+										"textHAlignment": "center",
+										"textVAlignment": "center",
+										"fontSize": 40,
+										"fontBold": false,
+										"x": 20,
+										"y": 10,
+										"width": 50,
+										"height": 50
+									}
+								]
+							}, {
+								"ctrlType": "DYText",
+								"dyName": "",
+								"tipText": "Density of grain",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"left": "indexArea.right",
+									"leftMargin": 40
+								},
+								"text": 25.8,
+								"fontSize": 50,
+								"fontBold": false,
+								"width": 50,
+								"height": 70
+							}, {
+								"ctrlType": "DYText",
+								"dyName": "",
+								"tipText": "Unit of Density",
+								"anchors": {
+									"verticalCenter": "parent.verticalCenter",
+									"right": "parent.right",
+									"leftMargin": 20
+								},
+								"text": "Grain/sqm",
+								"fontSize": 40,
+								"fontBold": false,
+								"x": 15,
+								"y": 5,
+								"width": 220,
+								"height": 50,
+								"fontColor": "#888",
+								"color": ""
+							}
+						]
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "line",
+						"tipText": "Plantation area2",
+						"anchors": {
+							"top": "top.bottom",
+							"left": "parent.left",
+							"right": "parent.right"
+						},
+						"width": 200,
+						"height": 1,
+						"color": "#080212",
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						]
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "bom",
+						"tipText": "Plantation area2",
+						"anchors": {
+							"top": "top.bottom",
+							"bottom": "parent.bottom",
+							"left": "parent.left",
+							"right": "parent.right",
+							"topMargin": 1
+						},
+						"width": 200,
+						"height": 200,
+						"color": "#00000000",
+						"leftPadding": 60,
+						"topPadding": 35,
+						"rows": 3,
+						"layout": "row",
+						"spacing": 40,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYButton",
+								"name": "Re-Sow",
+								"tipText": "Sow again",
+								"radius": 25,
+								"dSignal": {
+									"sigId": "btn-test-signal-two"
+								},
+								"fontSize": 24,
+								"width": 130,
+								"height": 50,
+								"borderColor": "#7f181b",
+								"color": "#7f181b",
+								"disableByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								]
+							}, {
+								"ctrlType": "DYButton",
+								"name": "qualified",
+								"tipText": "qualified",
+								"radius": 25,
+								"dSignal": {
+									"sigId": "btn-test-signal-two"
+								},
+								"fontSize": 24,
+								"width": 130,
+								"height": 50,
+								"borderColor": "#001025",
+								"color": "#001025",
+								"disableByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								]
+							}, {
+								"ctrlType": "DYButton",
+								"name": "Miss",
+								"tipText": "Miss",
+								"radius": 25,
+								"dSignal": {
+									"sigId": "btn-test-signal-two"
+								},
+								"fontSize": 24,
+								"width": 130,
+								"height": 50,
+								"borderColor": "#001025",
+								"color": "#001025",
+								"disableByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								]
+							}
+						]
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "rightArea",
+				"tipText": "rightArea",
+				"anchors": {
+					"top": "headArea.bottom",
+					"right": "parent.right",
+					"rightMargin": 20,
+					"bottom": "parent.bottom",
+					"bottomMargin": 10
+				},
+				"radius": 10,
+				"borderWidth": 2,
+				"borderColor": "#00000000",
+				"width": 300,
+				"height": 100,
+				"color": "#50000000",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYArea",
+						"dyName": "rtArea",
+						"tipText": "Acre Sowing Volume",
+						"anchors": {
+							"top": "parent.top",
+							"left": "parent.left",
+							"right": "parent.right",
+							"horizontalCenter": "parent.horizontalCenter"
+						},
+						"radius": 10,
+						"borderWidth": 2,
+						"color": "#50002663",
+						"borderColor": "#1547a5",
+						"height": 200,
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYArea",
+								"dyName": "iconArea",
+								"anchors": {
+									"horizontalCenter": "parent.horizontalCenter",
+									"bottom": "parent.verticalCenter"
+								},
+								"width": 240,
+								"height": 80,
+								"color": "#00000000",
+								"rows": 3,
+								"layout": "row",
+								"layoutReverse": true,
+								"spacing": 5,
+								"invisibleByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								],
+								"ctrlList": [
+									{
+										"ctrlType": "DYText",
+										"anchors": {
+											"right": "parent.horizontalCenter",
+											"bottom": "parent.bottom"
+										},
+										"textHAlignment": "right",
+										"textVAlignment": "bottom",
+										"text": 35.1,
+										"fontSize": 45,
+										"fontBold": false
+									}, {
+										"ctrlType": "DYText",
+										"anchors": {
+											"bottom": "parent.bottom",
+											"bottomMargin": 10,
+											"left": "parent.horizontalCenter"
+										},
+										"fontColor": "#888",
+										"textHAlignment": "left",
+										"textVAlignment": "bottom",
+										"text": "Grain/100m",
+										"fontSize": 22,
+										"fontBold": false
+									}
+								]
+							}, {
+								"ctrlType": "DYText",
+								"anchors": {
+									"horizontalCenter": "parent.horizontalCenter",
+									"top": "parent.verticalCenter"
+								},
+								"textHAlignment": "center",
+								"textVAlignment": "top",
+								"fontColor": "#888",
+								"text": "Acre Sowing Volume",
+								"fontSize": 25,
+								"fontBold": false
+							}
+						]
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "rmArea",
+						"tipText": "Plant Spacing",
+						"anchors": {
+							"verticalCenter": "parent.verticalCenter",
+							"left": "parent.left",
+							"right": "parent.right",
+							"horizontalCenter": "parent.horizontalCenter"
+						},
+						"radius": 10,
+						"borderWidth": 2,
+						"color": "#50002663",
+						"borderColor": "#1547a5",
+						"height": 200,
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYArea",
+								"dyName": "iconArea",
+								"anchors": {
+									"horizontalCenter": "parent.horizontalCenter",
+									"bottom": "parent.verticalCenter"
+								},
+								"width": 240,
+								"height": 80,
+								"color": "#00000000",
+								"rows": 3,
+								"layout": "row",
+								"layoutReverse": true,
+								"spacing": 5,
+								"invisibleByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								],
+								"ctrlList": [
+									{
+										"ctrlType": "DYText",
+										"dyName": "value",
+										"anchors": {
+											"right": "parent.horizontalCenter",
+											"rightMargin": -20,
+											"bottom": "parent.bottom"
+										},
+										"textHAlignment": "right",
+										"textVAlignment": "bottom",
+										"text": 0.95,
+										"fontSize": 45,
+										"fontBold": false
+									}, {
+										"ctrlType": "DYText",
+										"anchors": {
+											"bottom": "parent.bottom",
+											"bottomMargin": 10,
+											"left": "value.right"
+										},
+										"fontColor": "#888",
+										"textHAlignment": "left",
+										"textVAlignment": "bottom",
+										"text": "Inch",
+										"fontSize": 25,
+										"fontBold": false
+									}
+								]
+							}, {
+								"ctrlType": "DYText",
+								"anchors": {
+									"horizontalCenter": "parent.horizontalCenter",
+									"top": "parent.verticalCenter"
+								},
+								"textHAlignment": "center",
+								"textVAlignment": "top",
+								"fontColor": "#888",
+								"text": "Plant Spacing",
+								"fontSize": 25,
+								"fontBold": false
+							}
+						]
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "rbArea",
+						"tipText": "Plantation Area Width",
+						"anchors": {
+							"bottom": "parent.bottom",
+							"left": "parent.left",
+							"right": "parent.right",
+							"horizontalCenter": "parent.horizontalCenter"
+						},
+						"radius": 10,
+						"borderWidth": 2,
+						"color": "#50002663",
+						"borderColor": "#1547a5",
+						"height": 200,
+						"rows": 3,
+						"layout": "row",
+						"spacing": 20,
+						"rowSpacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYArea",
+								"dyName": "iconArea",
+								"anchors": {
+									"horizontalCenter": "parent.horizontalCenter",
+									"bottom": "parent.verticalCenter"
+								},
+								"width": 240,
+								"height": 80,
+								"color": "#00000000",
+								"rows": 3,
+								"layout": "row",
+								"layoutReverse": true,
+								"spacing": 5,
+								"invisibleByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								],
+								"ctrlList": [
+									{
+										"ctrlType": "DYText",
+										"dyName": "value",
+										"anchors": {
+											"right": "parent.horizontalCenter",
+											"rightMargin": -30,
+											"bottom": "parent.bottom"
+										},
+										"textHAlignment": "right",
+										"textVAlignment": "bottom",
+										"text": 4564,
+										"fontSize": 45,
+										"fontBold": false
+									}, {
+										"ctrlType": "DYText",
+										"anchors": {
+											"bottom": "parent.bottom",
+											"bottomMargin": 10,
+											"left": "value.right"
+										},
+										"fontColor": "#888",
+										"textHAlignment": "left",
+										"textVAlignment": "bottom",
+										"text": "M",
+										"fontSize": 25,
+										"fontBold": false
+									}
+								]
+							}, {
+								"ctrlType": "DYText",
+								"anchors": {
+									"horizontalCenter": "parent.horizontalCenter",
+									"top": "parent.verticalCenter"
+								},
+								"textHAlignment": "center",
+								"textVAlignment": "top",
+								"fontColor": "#888",
+								"text": "Width",
+								"fontSize": 25,
+								"fontBold": false
+							}
+						]
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "bomArea",
+				"tipText": "bomArea",
+				"anchors": {
+					"top": "midBomArea.bottom",
+					"topMargin": 20,
+					"horizontalCenter": "parent.horizontalCenter",
+					"bottom": "parent.bottom",
+					"bottomMargin": 25
+				},
+				"radius": 10,
+				"borderWidth": 2,
+				"borderColor": "#00000000",
+				"width": 350,
+				"height": 100,
+				"color": "#50000000",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYButton",
+						"radius": 35,
+						"tipText": "last",
+						"anchors": {
+							"left": "parent.left",
+							"bottom": "parent.bottom"
+						},
+						"name": "<",
+						"dSignal": {
+							"sigId": "btn-test-signal-two"
+						},
+						"fontSize": 24,
+						"width": 70,
+						"height": 70,
+						"borderColor": "#003666",
+						"color": "#003666",
+						"disableByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						]
+					}, {
+						"ctrlType": "DYButton",
+						"radius": 35,
+						"tipText": "Start Sowing",
+						"anchors": {
+							"horizontalCenter": "parent.horizontalCenter",
+							"bottom": "parent.bottom"
+						},
+						"name": "Start",
+						"dSignal": {
+							"sigId": "btn-test-signal-two"
+						},
+						"fontSize": 24,
+						"width": 130,
+						"height": 70,
+						"borderColor": "#003666",
+						"color": "#003666",
+						"disableByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						]
+					}, {
+						"ctrlType": "DYButton",
+						"radius": 35,
+						"tipText": "next",
+						"anchors": {
+							"right": "parent.right",
+							"bottom": "parent.bottom"
+						},
+						"name": ">",
+						"dSignal": {
+							"sigId": "btn-test-signal-two"
+						},
+						"fontSize": 24,
+						"width": 70,
+						"height": 70,
+						"borderColor": "#003666",
+						"color": "#003666",
+						"disableByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						]
+					}
+				]
+			}
+		]
+	}
+}

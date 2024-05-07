@@ -1,0 +1,1091 @@
+{
+	"appSetting": {
+		"width": 1360,
+		"height": 820,
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": false,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"color": "#500",
+		"showTip": true,
+		"rows": 4,
+		"fontFamily": "Microsoft YaHei",
+		"columns": 1,
+		"spacing": 0,
+		"layout": "column",
+		"dyName": "mothor",
+		"ctrlList": [
+			{
+				"ctrlType": "DYArea",
+				"dyName": "headArea",
+				"anchors": {
+					"top": "mothor.top",
+					"left": "mothor.left",
+					"right": "mothor.right"
+				},
+				"width": 1000,
+				"height": 70,
+				"color": "#333648",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYText",
+						"anchors": {
+							"horizontalCenter": "parent.horizontalCenter",
+							"verticalCenter": "parent.verticalCenter"
+						},
+						"text": "12:00",
+						"fontSize": 24,
+						"fontBold": true
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "iconArea",
+						"anchors": {
+							"verticalCenter": "parent.verticalCenter",
+							"right": "parent.right"
+						},
+						"width": 400,
+						"height": 50,
+						"color": "#00000000",
+						"rows": 3,
+						"layout": "row",
+						"layoutReverse": true,
+						"spacing": 5,
+						"invisibleByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"ctrlList": [
+							{
+								"ctrlType": "DYText",
+								"text": "23℃",
+								"fontSize": 35,
+								"fontBold": false
+							}, {
+								"ctrlType": "DYIconBtn",
+								"width": 45,
+								"height": 45,
+								"trueIconPath": "./images/svgs/test/天气.svg",
+								"falseIconPath": "./images/svgs/test/天气.svg",
+								"dSignal": {
+									"sigId": "not-hold-complete-btn"
+								}
+							}, {
+								"ctrlType": "DYIconBtn",
+								"width": 45,
+								"height": 45,
+								"trueIconPath": "./images/svgs/test/蓝牙-白.svg",
+								"falseIconPath": "./images/svgs/test/蓝牙-灰2.svg",
+								"dSignal": {
+									"sigId": "not-hold-complete-btn"
+								}
+							}
+						]
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "bodyArea",
+				"anchors": {
+					"left": "headArea.left",
+					"top": "headArea.bottom",
+					"right": "headArea.right",
+					"bottom": "parent.bottom"
+				},
+				"width": 1360,
+				"height": 300,
+				"color": "#012",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYSwipePage",
+						"showBar": false,
+						"anchors": {
+							"top": "parent.top",
+							"left": "parent.left",
+							"bottom": "parent.bottom",
+							"bottomMargin": 80,
+							"right": "parent.right"
+						},
+						"areaList": [
+							{
+								"ctrlType": "DYArea",
+								"tabInfo": {
+									"name": "name1"
+								},
+								"anchors": {
+									"fill": "parent"
+								},
+								"color": "#00000000",
+								"rows": 1,
+								"layout": "row",
+								"spacing": 20,
+								"rowSpacing": 5,
+								"invisibleByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								],
+								"ctrlList": [
+									{
+										"ctrlType": "DYArea",
+										"anchors": {
+											"left": "parent.left",
+											"leftMargin": 100,
+											"rightMargin": 100,
+											"right": "parent.right",
+											"verticalCenter": "parent.verticalCenter"
+										},
+										"color": "#00000000",
+										"height": 400,
+										"rows": 3,
+										"layout": "row",
+										"spacing": 50,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"ctrlList": [
+											{
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYIconBtn",
+																"anchors": {
+																	"right": "parent.right",
+																	"rightMargin": 30,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"color": "#00000000",
+																"width": 80,
+																"height": 80,
+																"trueIconPath": "./images/svgs/test/navigate.svg",
+																"falseIconPath": "./images/svgs/test/navigate.svg",
+																"dSignal": {
+																	"sigId": "not-hold-complete-btn"
+																}
+															}, {
+																"ctrlType": "DYText",
+																"anchors": {
+																	"left": "parent.left",
+																	"leftMargin": 30,
+																	"verticalCenterOffset": -10,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"textHAlignment": "center",
+																"text": "Destination\nTimes Square",
+																"fontSize": 18
+															}
+														]
+													}, {
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_nav.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_nav.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "NAV",
+														"fontSize": 18
+													}
+												]
+											}, {
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_phone.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_phone.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "Phone",
+														"fontSize": 18
+													}, {
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYText",
+																"anchors": {
+																	"verticalCenter": "parent.verticalCenter",
+																	"horizontalCenter": "parent.horizontalCenter"
+																},
+																"text": "Mum",
+																"fontSize": 18,
+																"width": 36
+															}
+														]
+													}
+												]
+											}, {
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_music.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_music.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "Music",
+														"fontSize": 18
+													}, {
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYText",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": -25,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"width": 120,
+																"text": "Name of Song",
+																"fontSize": 18
+															}, {
+																"ctrlType": "DYArea",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": 20,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"width": 150,
+																"height": 25,
+																"color": "#00000000",
+																"rows": 3,
+																"layout": "row",
+																"layoutReverse": true,
+																"spacing": 5,
+																"invisibleByList": [
+																	[
+																		"btn-test-signal-one"
+																	], 
+																	[]
+																],
+																"ctrlList": [
+																	{
+																		"ctrlType": "DYIconBtn",
+																		"anchors": {
+																			"left": "parent.left",
+																			"verticalCenter": "parent.verticalCenter"
+																		},
+																		"color": "#00000000",
+																		"width": 25,
+																		"height": 25,
+																		"trueIconPath": "./images/svgs/test/lastMusic.svg",
+																		"falseIconPath": "./images/svgs/test/lastMusic.svg",
+																		"dSignal": {
+																			"sigId": "not-hold-complete-btn"
+																		}
+																	}, {
+																		"ctrlType": "DYIconBtn",
+																		"anchors": {
+																			"horizontalCenter": "parent.horizontalCenter",
+																			"verticalCenter": "parent.verticalCenter"
+																		},
+																		"color": "#00000000",
+																		"width": 25,
+																		"height": 25,
+																		"trueIconPath": "./images/svgs/test/play.svg",
+																		"falseIconPath": "./images/svgs/test/play.svg",
+																		"dSignal": {
+																			"sigId": "not-hold-complete-btn"
+																		}
+																	}, {
+																		"ctrlType": "DYIconBtn",
+																		"anchors": {
+																			"right": "parent.right",
+																			"verticalCenter": "parent.verticalCenter"
+																		},
+																		"color": "#00000000",
+																		"width": 25,
+																		"height": 25,
+																		"trueIconPath": "./images/svgs/test/nextMusic.svg",
+																		"falseIconPath": "./images/svgs/test/nextMusic.svg",
+																		"dSignal": {
+																			"sigId": "not-hold-complete-btn"
+																		}
+																	}
+																]
+															}
+														]
+													}
+												]
+											}, {
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"textHAlignment": "center",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "Radios",
+														"fontSize": 18
+													}, {
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYText",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": -25,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"textHAlignment": "center",
+																"width": 80,
+																"text": "FM106.1",
+																"fontSize": 18
+															}, {
+																"ctrlType": "DYIconBtn",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": 20,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"width": 150,
+																"height": 28,
+																"trueIconPath": "./images/svgs/test/soundTexture.svg",
+																"falseIconPath": "./images/svgs/test/soundTexture.svg",
+																"dSignal": {
+																	"sigId": "not-hold-complete-btn"
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}, {
+								"ctrlType": "DYArea",
+								"tabInfo": {
+									"name": "name2"
+								},
+								"anchors": {
+									"fill": "parent"
+								},
+								"color": "#00000000",
+								"rows": 1,
+								"layout": "row",
+								"spacing": 20,
+								"rowSpacing": 5,
+								"invisibleByList": [
+									[
+										"btn-test-signal-one"
+									], 
+									[]
+								],
+								"ctrlList": [
+									{
+										"ctrlType": "DYArea",
+										"anchors": {
+											"left": "parent.left",
+											"leftMargin": 100,
+											"rightMargin": 100,
+											"right": "parent.right",
+											"verticalCenter": "parent.verticalCenter"
+										},
+										"color": "#00000000",
+										"height": 400,
+										"rows": 3,
+										"layout": "row",
+										"spacing": 50,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"ctrlList": [
+											{
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"textHAlignment": "center",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "Radios",
+														"fontSize": 18
+													}, {
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYText",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": -25,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"textHAlignment": "center",
+																"width": 80,
+																"text": "FM106.1",
+																"fontSize": 18
+															}, {
+																"ctrlType": "DYIconBtn",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": 20,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"width": 150,
+																"height": 28,
+																"trueIconPath": "./images/svgs/test/soundTexture.svg",
+																"falseIconPath": "./images/svgs/test/soundTexture.svg",
+																"dSignal": {
+																	"sigId": "not-hold-complete-btn"
+																}
+															}
+														]
+													}
+												]
+											}, {
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"textHAlignment": "center",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "Radios",
+														"fontSize": 18
+													}, {
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYText",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": -25,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"textHAlignment": "center",
+																"width": 80,
+																"text": "FM106.1",
+																"fontSize": 18
+															}, {
+																"ctrlType": "DYIconBtn",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": 20,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"width": 150,
+																"height": 28,
+																"trueIconPath": "./images/svgs/test/soundTexture.svg",
+																"falseIconPath": "./images/svgs/test/soundTexture.svg",
+																"dSignal": {
+																	"sigId": "not-hold-complete-btn"
+																}
+															}
+														]
+													}
+												]
+											}, {
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"textHAlignment": "center",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "Radios",
+														"fontSize": 18
+													}, {
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYText",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": -25,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"textHAlignment": "center",
+																"width": 80,
+																"text": "FM106.1",
+																"fontSize": 18
+															}, {
+																"ctrlType": "DYIconBtn",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": 20,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"width": 150,
+																"height": 28,
+																"trueIconPath": "./images/svgs/test/soundTexture.svg",
+																"falseIconPath": "./images/svgs/test/soundTexture.svg",
+																"dSignal": {
+																	"sigId": "not-hold-complete-btn"
+																}
+															}
+														]
+													}
+												]
+											}, {
+												"ctrlType": "DYArea",
+												"width": 250,
+												"height": 400,
+												"color": "#334",
+												"borderWidth": 1,
+												"borderColor": "#105d90",
+												"radius": 5,
+												"rows": 3,
+												"layout": "row",
+												"layoutReverse": true,
+												"spacing": 5,
+												"invisibleByList": [
+													[
+														"btn-test-signal-one"
+													], 
+													[]
+												],
+												"ctrlList": [
+													{
+														"ctrlType": "DYIconBtn",
+														"dyName": "mainIcon",
+														"anchors": {
+															"top": "parent.top",
+															"topMargin": 60,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 120,
+														"height": 120,
+														"trueIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"falseIconPath": "./images/svgs/test/mainIcon_radio.svg",
+														"dSignal": {
+															"sigId": "not-hold-complete-btn"
+														}
+													}, {
+														"ctrlType": "DYText",
+														"textHAlignment": "center",
+														"anchors": {
+															"top": "mainIcon.bottom",
+															"topMargin": 10,
+															"horizontalCenter": "parent.horizontalCenter"
+														},
+														"width": 36,
+														"text": "Radios",
+														"fontSize": 18
+													}, {
+														"ctrlType": "DYArea",
+														"anchors": {
+															"left": "parent.left",
+															"leftMargin": 1,
+															"right": "parent.right",
+															"rightMargin": 1,
+															"bottom": "parent.bottom",
+															"bottomMargin": 1
+														},
+														"height": 130,
+														"color": "#2c2c54",
+														"rows": 3,
+														"layout": "row",
+														"layoutReverse": true,
+														"spacing": 5,
+														"invisibleByList": [
+															[
+																"btn-test-signal-one"
+															], 
+															[]
+														],
+														"ctrlList": [
+															{
+																"ctrlType": "DYText",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": -25,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"textHAlignment": "center",
+																"width": 80,
+																"text": "FM106.1",
+																"fontSize": 18
+															}, {
+																"ctrlType": "DYIconBtn",
+																"anchors": {
+																	"horizontalCenter": "parent.horizontalCenter",
+																	"verticalCenterOffset": 20,
+																	"verticalCenter": "parent.verticalCenter"
+																},
+																"width": 150,
+																"height": 28,
+																"trueIconPath": "./images/svgs/test/soundTexture.svg",
+																"falseIconPath": "./images/svgs/test/soundTexture.svg",
+																"dSignal": {
+																	"sigId": "not-hold-complete-btn"
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

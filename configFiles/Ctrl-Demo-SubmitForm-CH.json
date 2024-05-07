@@ -1,0 +1,154 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"34": 111,
+		"areaTitle": "Title",
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 3,
+		"fontFamily": "微软雅黑",
+		"columns": 3,
+		"spacing": 10,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYForm",
+				"padding": 5,
+				"rows": 10,
+				"columns": 1,
+				"borderWidth": 2,
+				"spacing": 10,
+				"columnSpacing": 20,
+				"dSignal": {
+					"sigId": "form-family-electricity-status",
+					"destCode": "001"
+				},
+				"width": 330,
+				"height": 350,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"borderColor": "#777",
+				"ctrlList": [
+					{
+						"ctrlType": "DYText",
+						"text": "表单提交演示",
+						"fontSize": 20
+					}, {
+						"ctrlType": "DYTextInput",
+						"name": "用户名",
+						"dSignal": {
+							"sigId": "userName"
+						},
+						"width": 200,
+						"fontSize": 14
+					}, {
+						"ctrlType": "DYTextInput",
+						"name": "密码",
+						"dSignal": {
+							"sigId": "userCode"
+						},
+						"width": 200,
+						"isPassword": true,
+						"fontSize": 14
+					}, {
+						"ctrlType": "DYSwitch",
+						"name": "自动登录",
+						"dSignal": {
+							"sigId": "auto-login",
+							"destCode": 100
+						},
+						"fieldName": "television",
+						"width": 110,
+						"fontSize": 14
+					}, {
+						"ctrlType": "DYText",
+						"text": "说明:DYForm继承自DYArea控件，是一个容器类\n控件，同时它模仿网页表单功能，收集并提交表单\n内控件的数据给C++后台。它由普通的DYButton\n触发提交，子控件信息在信号体的SubInfo内。",
+						"fontSize": 14
+					}, {
+						"ctrlType": "DYButton",
+						"name": "提交",
+						"dSignal": {
+							"sigId": "SWITCH-TO-SPECIFIED-FONT-FAMILY",
+							"subInfo": {
+								"fontFamily": "微软雅黑"
+							}
+						},
+						"borderWidth": 1,
+						"x": 100,
+						"y": 280,
+						"width": 120,
+						"disableByList": [
+							[
+								"btn-test-signal-one"
+							], 
+							[]
+						],
+						"height": 30
+					}
+				]
+			}
+		]
+	}
+}

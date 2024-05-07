@@ -1,0 +1,1973 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": true,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "微软雅黑",
+		"spacing": 10,
+		"columns": 8,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"borderWidth": 1,
+				"borderColor": "#00000000",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "not-hold-complete-btn"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"borderWidth": 1,
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 35,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "完成",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "下载",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "关闭",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "信息",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"name": "完成",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"name": "下载",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"name": "关闭",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"name": "信息",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"name": "完成",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"name": "下载",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"name": "关闭",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"name": "信息",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"name": "完成",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"name": "下载",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"name": "关闭",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"name": "信息",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#555",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"name": "完成",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"name": "下载",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"name": "关闭",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"name": "信息",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#0091cd",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"name": "完成",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"name": "下载",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"name": "关闭",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"name": "信息",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#58181C",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"name": "完成",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"name": "下载",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"name": "关闭",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"name": "信息",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/完成.svg",
+				"name": "完成",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/下载.svg",
+				"name": "下载",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"defaultHold": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/关闭.svg",
+				"name": "关闭",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/信息.svg",
+				"name": "信息",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"defaultHold": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头左.svg",
+				"name": "箭头左",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头右.svg",
+				"name": "箭头右",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"defaultHold": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头上.svg",
+				"name": "箭头上",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}, {
+				"ctrlType": "DYButton",
+				"imagePath": "./images/svgs/test/箭头下.svg",
+				"name": "箭头下",
+				"borderWidth": 1,
+				"borderColor": "#177ddc",
+				"color": "#537b35",
+				"holdStatus": true,
+				"defaultHold": true,
+				"dSignal": {
+					"sigId": "btn-test-signal-two"
+				},
+				"width": 90,
+				"height": 35,
+				"disableByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				]
+			}
+		]
+	}
+}
