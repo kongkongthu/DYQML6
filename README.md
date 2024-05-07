@@ -81,33 +81,33 @@ In addition, DYQML will dynamically destroy the previously created interface and
 
 ### 1. Configure your own configuration file
 
-Now, developers reading to this part most concerned may be how to configure your own configuration files. Through a simple study, we can begin to configure, see the article: [Easy to get started with configuration files](https://github.com/kongkongthu/DYQML6/blob/master/docs/1-Easy to get started with configuration files.md).
+Now, developers reading to this part most concerned may be how to configure your own configuration files. Through a simple study, we can begin to configure, see the article: [Easy to get started with configuration files](https://github.com/kongkongthu/DYQML6/blob/master/docs/1-Easy%20to%20get%20started%20with%20configuration%20files.md).
 
 If you want to customize your development or develop more advanced features, it is highly recommended to master the following.
 
 ### 2. Control System Composition
 
-This project builds the interface by loading configuration files and dynamically loading predefined components. Understanding the component system allows you to customize and develop your own controls and implement dynamic loading of them. For details, please refer to the article:[Control System Composition and Customize Controls](https://github.com/kongkongthu/DYQML6/blob/master/docs/2-Control System Composition and Customize Controls.md)
+This project builds the interface by loading configuration files and dynamically loading predefined components. Understanding the component system allows you to customize and develop your own controls and implement dynamic loading of them. For details, please refer to the article:[Control System Composition and Customize Controls](https://github.com/kongkongthu/DYQML6/blob/master/docs/2-Control%20System%20Composition%20and%20Customize%20Controls.md)
 
 ### 3. Signal system composition
 
-This project standardizes signals between C++ and QML, and between individual controls of QML, and the whole system is managed through a unified signal system. Under the premise of following the overall concept and structure of the signaling system for this project, any desired signaling and response can be achieved. For details, please refer to the article:[Signal System Composition](https://github.com/kongkongthu/DYQML6/blob/master/docs/3-Signal system composition.md)
+This project standardizes signals between C++ and QML, and between individual controls of QML, and the whole system is managed through a unified signal system. Under the premise of following the overall concept and structure of the signaling system for this project, any desired signaling and response can be achieved. For details, please refer to the article:[Signal System Composition](https://github.com/kongkongthu/DYQML6/blob/master/docs/3-Signal%20system%20composition.md)
 
 ### 4. Real-time data display and unified timer
 
-This system is friendly to the display of real-time data and uses a unified timer which is `freshTimer`, to get the data and refresh the interface display. It is recommended that all the data that needs to be refreshed in real time should use this unified timer to refresh the data display. For details, please refer to the article: [Real-time Data and Unified Timer](https://github.com/kongkongthu/DYQML6/blob/master/docs/4-Real-time Data and Unified Timer.md).
+This system is friendly to the display of real-time data and uses a unified timer which is `freshTimer`, to get the data and refresh the interface display. It is recommended that all the data that needs to be refreshed in real time should use this unified timer to refresh the data display. For details, please refer to the article: [Real-time Data and Unified Timer](https://github.com/kongkongthu/DYQML6/blob/master/docs/4-Real-time%20Data%20and%20Unified%20Timer.md).
 
 ### 5. Color Space Setting
 
-This project supports the setting of color space, the control in the configuration JSON file will take the corresponding color value in the color space if it is not specified in the file. In addition to the default color space, we can also modify the color space through the configuration file, the color space of the system is designed to be very flexible, the details of the color and color space in the article: [Color and Color Space](https://github.com/kongkongthu/DYQML6/blob/master/docs/5-Color and Color Spaces.md)
+This project supports the setting of color space, the control in the configuration JSON file will take the corresponding color value in the color space if it is not specified in the file. In addition to the default color space, we can also modify the color space through the configuration file, the color space of the system is designed to be very flexible, the details of the color and color space in the article: [Color and Color Space](https://github.com/kongkongthu/DYQML6/blob/master/docs/5-Color%20and%20Color%20Spaces.md)
 
 ### 6. Shortcut Keys and Interface Tips
 
-This project supports the configuration of shortcut keys and interface tips. Except for a few shortcuts written by the system, other shortcuts and combinations of shortcuts can be configured directly through the configuration file. The interface tip information is the information that will pop up automatically when the mouse moves to a control, which is realized by using the QML ToolTip component. However, in order to maximize the use of resources, all tips are dynamically generated and dynamically destroyed. For details, see the article: [Shortcuts and tip message configuration](https://github.com/kongkongthu/DYQML6/blob/master/docs/6-Shortcuts and tip message configuration.md)
+This project supports the configuration of shortcut keys and interface tips. Except for a few shortcuts written by the system, other shortcuts and combinations of shortcuts can be configured directly through the configuration file. The interface tip information is the information that will pop up automatically when the mouse moves to a control, which is realized by using the QML ToolTip component. However, in order to maximize the use of resources, all tips are dynamically generated and dynamically destroyed. For details, see the article: [Shortcuts and tip message configuration](https://github.com/kongkongthu/DYQML6/blob/master/docs/6-Shortcuts%20and%20tip%20message%20configuration.md)
 
 ### 7. Customizing configuration file loading
 
-There are projects where we don't need to load configuration files by default when the program runs, and we can't select the desired configuration file via the file selection dialog. For example, if we are developing a car management system, we may need to select the corresponding car model on the interface, and then load the corresponding car model interface with the corresponding configuration file. At this point we need to customize the loading of configuration files, see the article for details:[Customize the loading of configuration files](https://github.com/kongkongthu/DYQML6/blob/master/docs/7-Customize the loading of configuration files.md)
+There are projects where we don't need to load configuration files by default when the program runs, and we can't select the desired configuration file via the file selection dialog. For example, if we are developing a car management system, we may need to select the corresponding car model on the interface, and then load the corresponding car model interface with the corresponding configuration file. At this point we need to customize the loading of configuration files, see the article for details:[Customize the loading of configuration files](https://github.com/kongkongthu/DYQML6/blob/master/docs/7-Customize%20the%20loading%20of%20configuration%20files.md)
 
 ## IV. Future Plans
 
