@@ -1,6 +1,6 @@
 # DYQML6 Introduction
 
-[Press for Chinese document]()
+[Press for Chinese document]([DYQML6/README_CH.md at master · kongkongthu/DYQML6 (github.com)](https://github.com/kongkongthu/DYQML6/blob/master/README_CH.md))
 
 ## I. Introduction
 
