@@ -1,7 +1,6 @@
 import QtQuick
 import QtQuick.Window
 import Qt.labs.platform 1.1
-//import "./qml/controls/baseControls"
 import "./qml/js/parseParameters.js" as ParseFunc
 import "./qml/controls"
 
@@ -24,7 +23,7 @@ Window {
     property bool showTip: false
     property var shortcutObjList:[]
     property color undefinedColor
-    property Component shortcutComp: Qt.createComponent("./qml/controls/baseControls/DYShortcut.qml")
+    property Component shortcutComp: Qt.createComponent("./qml/controls/DYShortcut.qml")
 
     signal sigShowGUIChoosePage()
     signal sigTriggerGUI(var dSignal)
@@ -192,8 +191,9 @@ Window {
     function destroyGUI(){
         if(topArea)
             topArea.destroy();
-        if(shortcutObjList.length!==0)
-            shortcutObjList = [];
+        if(shortcutObjList.length!==0){
+            destroyShortcut();
+        }
         if(centerText)
             centerText.destroy();
         if(bomTipText)
@@ -203,6 +203,8 @@ Window {
         if(dyValues)
             dyValues = undefined;
     }
+
+
 
     function generateGUI(){
         resizeWindow();
@@ -217,6 +219,29 @@ Window {
         delete paras.fontFamily;
         topArea = areaComp.createObject(frontEnd, paras);
         addShortcut();
+    }
+
+    function destroyShortcut(){
+        let shortcutNum = shortcutObjList.length;
+        for(let i=0; i<shortcutNum; i++){
+            let shortcut = shortcutObjList.shift();
+            shortcut.enabled = false;
+            shortcut.destroy();
+        }
+    }
+
+    function addShortcut(){
+        if(frontEndJson["appSetting"] && frontEndJson["appSetting"]["shortcutList"]){
+            let shortcutList = frontEndJson["appSetting"]["shortcutList"];
+            let paras;
+            for(let i=0; i<shortcutList.length; i++){
+                paras = {
+                    "signalList": shortcutList[i].dSignalList,
+                    "sequence": shortcutList[i].keys,
+                };
+                shortcutObjList.push(shortcutComp.createObject(frontEnd, paras));
+            }
+        }
     }
 
     function resizeWindow(){
@@ -250,19 +275,7 @@ Window {
         }
     }
 
-    function addShortcut(){
-        if(frontEndJson["appSetting"] && frontEndJson["appSetting"]["shortcutList"]){
-            let shortcutList = frontEndJson["appSetting"]["shortcutList"];
-            let paras;
-            for(let i=0; i<shortcutList.length; i++){
-                paras = {
-                    "signalList": shortcutList[i].dSignalList,
-                    "sequence": shortcutList[i].keys,
-                };
-                shortcutObjList.push(shortcutComp.createObject(frontEnd, paras));
-            }
-        }
-    }
+
 
     Component.onDestruction: console.log(`Application start quits.`)
 

@@ -5,51 +5,51 @@
 				"keys": "A",
 				"dSignalList": [
 					{
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig1"
+						}
 					}, {
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig2"
+						}
 					}, {
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig3"
+						}
 					}
 				]
 			}, {
 				"keys": "B",
 				"dSignalList": [
 					{
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig1"
+						}
 					}, {
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig2"
+						}
 					}, {
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig3"
+						}
 					}
 				]
 			}, {
 				"keys": "C",
 				"dSignalList": [
 					{
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig1"
+						}
 					}, {
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig2"
+						}
 					}, {
-						"sigId": "xxxx-xxxx-xxxx",
-						"destCode": "100",
-						"subInfo": ""
+						"dSignal": {
+							"sigId": "short-cut-A-sig3"
+						}
 					}
 				]
 			}

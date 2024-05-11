@@ -7,7 +7,7 @@ Shortcut {
     onActivated: {
         for(let i=0; i<signalList.length; i++){
             try{
-                EmitSignal.emitSignal(signalList[i]);
+                EmitSignal.emitSignal(signalList[i].dSignal);
             }catch(err){
                 console.log(`EmitSignal err in DYShortcut.qml`);
             }
