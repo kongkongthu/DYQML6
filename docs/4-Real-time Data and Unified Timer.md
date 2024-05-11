@@ -44,7 +44,7 @@ The above three methods support reading multiple hash keys at a time, also suppo
 
 The key here is the `dataId` defined by C++, please make sure they are unique within the hash table. The whole DYQML system manages and accesses each data in the hash table through `dataId`. If the amount of data is huge, for example more than 100 items, it is recommended to use global unique identifier GUID to ensure uniqueness. There are many software and tools that can generate GUIDs, and unified management of the generated GUIDs will greatly simplify your project.
 
-The format of GUID is “xxxxxxxxxx-xxxx-xxxx-xxxxxx-xxxxxxxxxxxxx”, where each x is a [hexadecimal] data in the range 0-9 or a-f. For example: TY961D5F-8B7T-YUH8-BB5T-T5TI6VB9S5NL. Some software generates letters all in upper case, some in lower case, both are fine and do not affect the use.
+The format of GUID is "`xxxxxxxxxx-xxxx-xxxx-xxxxxx-xxxxxxxxxxxxx`", where each x is a [hexadecimal] data in the range 0-9 or a-f. For example: `TY961D5F-8B7T-YUH8-BB5T-T5TI6VB9S5NL`. Some software generates letters all in upper case, some in lower case, both are fine and do not affect the use.
 
 ## II. The C++ backend maintains the hash table
 

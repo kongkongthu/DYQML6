@@ -1,0 +1,3728 @@
+{
+	"appSetting": {
+		"width": 1300,
+		"shortcutList": [
+			{
+				"keys": "Ctrl+A",
+				"dSignalList": [
+					{
+						"sigId": "btn1-to-load-page",
+						"destCode": 100,
+						"subInfo": {
+							"index": 0
+						}
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}, {
+						"sigId": "xxxx-xxxx-xxxx",
+						"destCode": "100",
+						"subInfo": ""
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": false,
+		"dyName": "topArea",
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 4,
+		"fontFamily": "Microsoft YaHei",
+		"columns": 1,
+		"spacing": 30,
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYText",
+				"text": "DYLoader demo",
+				"textHAlignment": "center",
+				"dyName": "title",
+				"anchors": {
+					"horizontalCenter": "topArea.horizontalCenter"
+				},
+				"fontSize": 28,
+				"fontColor": "#fff",
+				"height": 20
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "leftArea",
+				"anchors": {
+					"top": "title.bottom",
+					"topMargin": 30,
+					"left": "parent.left",
+					"leftMargin": 10,
+					"bottom": "parent.bottom",
+					"bottomMargin": 10,
+					"right": "parent.right",
+					"rightMargin": 300
+				},
+				"radius": 10,
+				"borderWidth": 2,
+				"borderColor": "#1547a5",
+				"width": 600,
+				"height": 100,
+				"color": "#50002663",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYLoader",
+						"tipText": "I am a DYLoaer inside a DYArea, and I can not be seen for now.",
+						"borderWidth": 2,
+						"anchors": {
+							"top": "parent.top",
+							"topMargin": 5,
+							"left": "parent.left",
+							"leftMargin": 5,
+							"bottom": "parent.bottom",
+							"bottomMargin": 5,
+							"right": "parent.right",
+							"rightMargin": 5
+						},
+						"x": 200,
+						"y": 100,
+						"width": 300,
+						"height": 300,
+						"clearSourceByList": [
+							"switch1-to-load-page-OFF", "switch2-to-load-page-OFF", "switch3-to-load-page-OFF", "switch4-to-load-page-OFF", "switch5-to-load-page-OFF", "switch6-to-load-page-OFF"
+						],
+						"setSourceByList": [
+							"switch1-to-load-page-ON", "switch2-to-load-page-ON", "switch3-to-load-page-ON", "switch4-to-load-page-ON", "switch5-to-load-page-ON", "switch6-to-load-page-ON", "sig-dyArea-load-page-ON", "btn1-to-load-page", "btn2-to-load-page", "btn3-to-load-page", "btn4-to-load-page", "btn5-to-load-page", "btn6-to-load-page", "sig-dyArea-load-page"
+						],
+						"defaultLoadIndex": -1,
+						"areaList": [
+							{
+								"ctrlType": "DYArea",
+								"flickable": false,
+								"contentWidth": 600,
+								"contentHeight": 3000,
+								"color": "#A1E4FC",
+								"showTip": true,
+								"rows": 4,
+								"fontFamily": "微软雅黑",
+								"columns": 1,
+								"spacing": 0,
+								"ctrlList": [
+									{
+										"ctrlType": "DYText",
+										"dyName": "title",
+										"anchors": {
+											"top": "parent.top",
+											"left": "parent.left",
+											"right": "parent.right"
+										},
+										"text": "DYSignal与弹出显示",
+										"height": 90,
+										"textHAlignment": "center",
+										"textVAlignment": "center",
+										"color": "#00000000",
+										"fontColor": "#000",
+										"fontSize": 28,
+										"fontBold": true
+									}, {
+										"ctrlType": "DYArea",
+										"dyName": "popupArea",
+										"anchors": {
+											"top": "title.bottom",
+											"left": "parent.left",
+											"leftMargin": 30,
+											"right": "parent.horizontalCenter",
+											"rightMargin": 10,
+											"bottom": "parent.bottom",
+											"bottomMargin": 30
+										},
+										"color": "#555",
+										"rows": 3,
+										"layout": "row",
+										"spacing": 20,
+										"rowSpacing": 5,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"ctrlList": [
+											{
+												"ctrlType": "DYText",
+												"dyName": "popupAreatitle",
+												"anchors": {
+													"top": "parent.top",
+													"left": "parent.left",
+													"right": "parent.right"
+												},
+												"text": "信息弹出区",
+												"height": 40,
+												"textHAlignment": "center",
+												"textVAlignment": "center",
+												"color": "#00000000",
+												"fontColor": "#dcdcdc",
+												"fontSize": 28,
+												"fontBold": true
+											}, {
+												"ctrlType": "DYSigPopUp",
+												"anchors": {
+													"top": "popupAreatitle.bottom",
+													"left": "parent.left",
+													"right": "parent.right",
+													"bottom": "parent.bottom",
+													"leftMargin": 20,
+													"rightMargin": 20
+												},
+												"color": "#00000000"
+											}
+										]
+									}, {
+										"ctrlType": "DYArea",
+										"dyName": "noteArea",
+										"anchors": {
+											"top": "title.bottom",
+											"left": "parent.horizontalCenter",
+											"leftMargin": 10,
+											"right": "parent.right",
+											"rightMargin": 30
+										},
+										"height": 200,
+										"color": "#555",
+										"rows": 3,
+										"layout": "row",
+										"spacing": 20,
+										"rowSpacing": 5,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"ctrlList": [
+											{
+												"ctrlType": "DYText",
+												"dyName": "noteText",
+												"anchors": {
+													"top": "parent.top",
+													"leftMargin": 15,
+													"left": "parent.left",
+													"right": "parent.right",
+													"bottom": "parent.bottom"
+												},
+												"text": "提示：DYSignal是DYQML系统中传递的信号体。\n每个继承自DYControllerBase的控件都可以产生\n用户事件并且发送一个包含DYSignal信息的信号。\n点击下面的控件将会发送对应的DYSignal，对应\n的信息将会显示在右边的信息弹出区。",
+												"height": 40,
+												"textHAlignment": "left",
+												"textVAlignment": "center",
+												"color": "#00000000",
+												"fontColor": "#dcdcdc",
+												"fontSize": 18,
+												"fontBold": true
+											}
+										]
+									}, {
+										"ctrlType": "DYArea",
+										"dyName": "controllerArea",
+										"anchors": {
+											"left": "noteArea.left",
+											"top": "noteArea.bottom",
+											"topMargin": 20,
+											"right": "noteArea.right",
+											"bottom": "parent.bottom",
+											"bottomMargin": 30
+										},
+										"color": "#555",
+										"columns": 4,
+										"rows": 6,
+										"layout": "grid",
+										"padding": 20,
+										"spacing": 20,
+										"rowSpacing": 10,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"ctrlList": [
+											{
+												"ctrlType": "DYButton",
+												"name": "隐藏",
+												"dyName": "btn1",
+												"tipText": "点击隐藏下面的控件",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "sig-hide-all-controls"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-show-all-controls"
+												],
+												"disableByList": [
+													"sig-hide-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYButton",
+												"enabled": false,
+												"name": "显示",
+												"dyName": "btn2",
+												"tipText": "点击显示下面的控件",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "sig-show-all-controls"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-hide-all-controls"
+												],
+												"disableByList": [
+													"sig-show-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYButton",
+												"name": "使能",
+												"dyName": "btn3",
+												"tipText": "点击使不能下面的控件",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "sig-disable-all-controls"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYButton",
+												"enabled": false,
+												"name": "使不能",
+												"dyName": "btn4",
+												"tipText": "点击使能下面的控件",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "sig-enable-all-controls"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-disable-all-controls"
+												],
+												"disableByList": [
+													"sig-enable-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYButton",
+												"name": "按钮1",
+												"dyName": "btn5",
+												"tipText": "Test button 1",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "test-btn1-pressed"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"invisibleByList": [
+													"sig-hide-all-controls"
+												],
+												"visibleByList": [
+													"sig-show-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYButton",
+												"name": "按钮2",
+												"dyName": "btn6",
+												"tipText": "Test button 2",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "test-btn2-pressed"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"invisibleByList": [
+													"sig-hide-all-controls"
+												],
+												"visibleByList": [
+													"sig-show-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYButton",
+												"name": "按钮3",
+												"dyName": "btn7",
+												"tipText": "Test button 3",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "test-btn3-pressed"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"invisibleByList": [
+													"sig-hide-all-controls"
+												],
+												"visibleByList": [
+													"sig-show-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYButton",
+												"name": "按钮4",
+												"dyName": "btn8",
+												"tipText": "Test button 4",
+												"borderWidth": 1,
+												"dSignal": {
+													"sigId": "test-btn4-pressed"
+												},
+												"width": 90,
+												"height": 40,
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"invisibleByList": [
+													"sig-hide-all-controls"
+												],
+												"visibleByList": [
+													"sig-show-all-controls"
+												],
+												"color": "#333"
+											}, {
+												"ctrlType": "DYArea",
+												"dyName": "radioArea",
+												"tipText": "This is a area contain 4 option",
+												"borderWidth": 1,
+												"anchors": {
+													"top": "comboBox.bottom",
+													"left": "parent.left",
+													"leftMargin": 20,
+													"right": "parent.right",
+													"rightMargin": 32,
+													"topMargin": 20
+												},
+												"radius": 5,
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"invisibleByList": [
+													"sig-hide-all-controls"
+												],
+												"visibleByList": [
+													"sig-show-all-controls"
+												],
+												"x": 100,
+												"y": 300,
+												"width": 400,
+												"height": 80,
+												"layout": "grid",
+												"columns": 2,
+												"rows": 3,
+												"padding": 5,
+												"spacing": 20,
+												"rowSpacing": 5,
+												"color": "#00000000",
+												"borderColor": "#dcdcdc",
+												"ctrlList": [
+													{
+														"ctrlType": "DYRadioButton",
+														"name": "单选选项1",
+														"color": "#00000000",
+														"height": 30,
+														"dSignal": {
+															"sigId": "radio-btn1-checked",
+															"destCode": 100
+														},
+														"unCheckedByList": [
+															"radio-btn4-checked", "radio-btn2-checked", "radio-btn3-checked"
+														],
+														"width": 120
+													}, {
+														"ctrlType": "DYRadioButton",
+														"name": "单选选项2",
+														"checked": true,
+														"color": "#00000000",
+														"height": 30,
+														"dSignal": {
+															"sigId": "radio-btn2-checked",
+															"destCode": 100
+														},
+														"unCheckedByList": [
+															"radio-btn1-checked", "radio-btn4-checked", "radio-btn3-checked"
+														],
+														"width": 120
+													}, {
+														"ctrlType": "DYRadioButton",
+														"name": "单选选项3",
+														"color": "#00000000",
+														"height": 30,
+														"dSignal": {
+															"sigId": "radio-btn3-checked",
+															"destCode": 100
+														},
+														"unCheckedByList": [
+															"radio-btn1-checked", "radio-btn2-checked", "radio-btn4-checked"
+														],
+														"width": 120
+													}, {
+														"ctrlType": "DYRadioButton",
+														"name": "单选选项4",
+														"color": "#00000000",
+														"height": 30,
+														"dSignal": {
+															"sigId": "radio-btn4-checked",
+															"destCode": 100
+														},
+														"unCheckedByList": [
+															"radio-btn1-checked", "radio-btn2-checked", "radio-btn3-checked"
+														],
+														"width": 120
+													}
+												]
+											}, {
+												"ctrlType": "DYComboBox",
+												"dyName": "comboBox",
+												"name": "ComboBox",
+												"tipText": "A ComboBox Control deliver a more complex signal.",
+												"anchors": {
+													"top": "parent.top",
+													"left": "parent.left",
+													"leftMargin": 20,
+													"right": "parent.right",
+													"rightMargin": 32,
+													"topMargin": 120
+												},
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"invisibleByList": [
+													"sig-hide-all-controls"
+												],
+												"visibleByList": [
+													"sig-show-all-controls"
+												],
+												"dSignal": {
+													"sigId": "comboBox-choice-changed",
+													"destCode": 100
+												},
+												"itemList": [
+													"Option1", "Option2", "Option3"
+												],
+												"attachedValue": [
+													1, 2, 3
+												],
+												"width": 160,
+												"color": "#00000000"
+											}, {
+												"ctrlType": "DYArea",
+												"dyName": "radioArea",
+												"tipText": "This is a area contain 4 option",
+												"borderWidth": 1,
+												"anchors": {
+													"top": "radioArea.bottom",
+													"left": "parent.left",
+													"leftMargin": 20,
+													"right": "parent.right",
+													"rightMargin": 32,
+													"topMargin": 20
+												},
+												"radius": 5,
+												"enableByList": [
+													"sig-enable-all-controls"
+												],
+												"disableByList": [
+													"sig-disable-all-controls"
+												],
+												"invisibleByList": [
+													"sig-hide-all-controls"
+												],
+												"visibleByList": [
+													"sig-show-all-controls"
+												],
+												"x": 100,
+												"y": 300,
+												"width": 400,
+												"height": 80,
+												"layout": "grid",
+												"columns": 2,
+												"rows": 3,
+												"padding": 10,
+												"spacing": 40,
+												"rowSpacing": 5,
+												"color": "#00000000",
+												"borderColor": "#dcdcdc",
+												"ctrlList": [
+													{
+														"ctrlType": "DYSwitch",
+														"name": "开关 1",
+														"color": "#00000000",
+														"dSignal": {
+															"sigId": "radio-btn1-checked",
+															"destCode": 100
+														},
+														"width": 100
+													}, {
+														"ctrlType": "DYSwitch",
+														"name": "开关 2",
+														"color": "#00000000",
+														"dSignal": {
+															"sigId": "radio-btn2-checked",
+															"destCode": 100
+														},
+														"width": 100
+													}, {
+														"ctrlType": "DYSwitch",
+														"name": "开关 3",
+														"color": "#00000000",
+														"dSignal": {
+															"sigId": "radio-btn3-checked",
+															"destCode": 100
+														},
+														"width": 100
+													}, {
+														"ctrlType": "DYSwitch",
+														"name": "开关 4",
+														"color": "#00000000",
+														"dSignal": {
+															"sigId": "radio-btn4-checked",
+															"destCode": 100
+														},
+														"width": 100
+													}
+												]
+											}
+										]
+									}
+								]
+							}, {
+								"ctrlType": "DYArea",
+								"flickable": true,
+								"contentWidth": 600,
+								"contentHeight": 3000,
+								"showTip": true,
+								"rows": 20,
+								"fontFamily": "微软雅黑",
+								"spacing": 10,
+								"columns": 4,
+								"titlePos": "left",
+								"layout": "grid",
+								"ctrlList": [
+									{
+										"ctrlType": "DYSwitch",
+										"width": 50,
+										"dSignal": {
+											"sigId": "DYSWITCH-1"
+										}
+									}, {
+										"ctrlType": "DYSwitch",
+										"onText": "开",
+										"offText": "关",
+										"width": 50
+									}, {
+										"ctrlType": "DYSwitch",
+										"onText": "里",
+										"offText": "外",
+										"width": 50
+									}, {
+										"ctrlType": "DYSwitch",
+										"onText": "上",
+										"offText": "下",
+										"width": 50
+									}, {
+										"ctrlType": "DYSwitch",
+										"defaultValue": true,
+										"width": 50,
+										"dSignal": {
+											"sigId": "DYSWITCH-1"
+										}
+									}, {
+										"ctrlType": "DYSwitch",
+										"onText": "开",
+										"offText": "关",
+										"defaultValue": true,
+										"width": 50
+									}, {
+										"ctrlType": "DYSwitch",
+										"onText": "里",
+										"offText": "外",
+										"defaultValue": true,
+										"width": 50
+									}, {
+										"ctrlType": "DYSwitch",
+										"onText": "上",
+										"offText": "下",
+										"defaultValue": true,
+										"width": 50
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关5",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关6",
+										"onColor": "#17dc7d",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关7",
+										"onColor": "#7d17dc",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关8",
+										"onColor": "#dc7d17",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关5",
+										"defaultValue": true,
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关6",
+										"onColor": "#17dc7d",
+										"defaultValue": true,
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关7",
+										"onColor": "#7d17dc",
+										"defaultValue": true,
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关8",
+										"onColor": "#dc7d17",
+										"defaultValue": true,
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关9",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关10",
+										"offColor": "#718093",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关11",
+										"offColor": "#192a56",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关12",
+										"offColor": "#2c2c54",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关13",
+										"fontColor": "red",
+										"width": 85
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关14",
+										"fontColor": "#feca57",
+										"width": 90
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关15",
+										"fontColor": "#25CCF7",
+										"width": 90
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关16",
+										"fontColor": "#ff9ff3",
+										"width": 90
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关17",
+										"fontSize": 16,
+										"width": 110,
+										"height": 35
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关18",
+										"fontSize": 16,
+										"width": 110,
+										"height": 35
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关19",
+										"fontSize": 16,
+										"width": 110,
+										"height": 35
+									}, {
+										"ctrlType": "DYSwitch",
+										"name": "开关20",
+										"fontSize": 16,
+										"width": 110,
+										"height": 35
+									}
+								]
+							}, {
+								"ctrlType": "DYArea",
+								"flickable": true,
+								"contentWidth": 600,
+								"contentHeight": 3000,
+								"showTip": true,
+								"rows": 20,
+								"fontFamily": "微软雅黑",
+								"spacing": 10,
+								"columns": 1,
+								"titlePos": "left",
+								"layout": "grid",
+								"ctrlList": [
+									{
+										"ctrlType": "DYSlider",
+										"showValue": false,
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "滑块2",
+										"showValue": false,
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "滑块4",
+										"max": "",
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "指定max",
+										"max": 100.5,
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "指定minMax",
+										"min": -100.5,
+										"max": 100.5,
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "指定默认值",
+										"min": -100.5,
+										"max": 100.5,
+										"defaultValue": 40,
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "1位小数点",
+										"min": -100.5,
+										"max": 100.5,
+										"defaultValue": 40,
+										"decimalNum": 1,
+										"height": 30,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "显示器宽度",
+										"min": -100.5,
+										"max": 100.5,
+										"defaultValue": 40,
+										"decimalNum": 3,
+										"height": 30,
+										"valueWidth": 70,
+										"wrap": true,
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "发送信号",
+										"min": -100.5,
+										"max": 100.5,
+										"defaultValue": 40,
+										"decimalNum": 3,
+										"height": 30,
+										"wrap": true,
+										"dSignal": {
+											"sigId": "SLIDER1-VALUE-CHANGED",
+											"destCode": 101
+										},
+										"width": 400
+									}, {
+										"ctrlType": "DYSlider",
+										"name": "改变高度",
+										"min": -100.5,
+										"max": 100.5,
+										"defaultValue": 40,
+										"decimalNum": 3,
+										"height": 40,
+										"wrap": true,
+										"width": 400
+									}
+								]
+							}, {
+								"ctrlType": "DYArea",
+								"flickable": true,
+								"contentWidth": 600,
+								"contentHeight": 3000,
+								"showTip": true,
+								"rows": 20,
+								"fontFamily": "微软雅黑",
+								"spacing": 20,
+								"columns": 1,
+								"titlePos": "left",
+								"layout": "grid",
+								"ctrlList": [
+									{
+										"ctrlType": "DYComboBox",
+										"dSignal": {
+											"sigId": "current-charging-device",
+											"destCode": 100
+										},
+										"itemList": [
+											"选项一", "选项二", "选项三"
+										],
+										"attachedValue": [
+											1, 2, 3
+										],
+										"width": 280
+									}, {
+										"ctrlType": "DYComboBox",
+										"name": "下拉菜单",
+										"dSignal": {
+											"sigId": "current-charging-device",
+											"destCode": 100
+										},
+										"itemList": [
+											"选项一", "选项二", "选项三"
+										],
+										"attachedValue": [
+											1, 2, 3
+										],
+										"width": 280
+									}, {
+										"ctrlType": "DYComboBox",
+										"name": "指定字体颜色",
+										"fontColor": "#499500",
+										"dSignal": {
+											"sigId": "current-charging-device",
+											"destCode": 100
+										},
+										"itemList": [
+											"Option1", "Option2", "Option3"
+										],
+										"attachedValue": [
+											1, 2, 3
+										],
+										"width": 280
+									}, {
+										"ctrlType": "DYComboBox",
+										"name": "指定背景色",
+										"bkColor": "#a66b00",
+										"dSignal": {
+											"sigId": "current-charging-device",
+											"destCode": 100
+										},
+										"itemList": [
+											"Option1", "Option2", "Option3"
+										],
+										"attachedValue": [
+											1, 2, 3
+										],
+										"width": 280
+									}, {
+										"ctrlType": "DYComboBox",
+										"name": "改变高度",
+										"dSignal": {
+											"sigId": "current-charging-device",
+											"destCode": 100
+										},
+										"itemList": [
+											"选项一", "选项二", "选项三"
+										],
+										"attachedValue": [
+											1, 2, 3
+										],
+										"height": 40,
+										"width": 280
+									}, {
+										"ctrlType": "DYComboBox",
+										"name": "字体尺寸=20",
+										"fontSize": 20,
+										"dSignal": {
+											"sigId": "current-charging-device",
+											"destCode": 100
+										},
+										"itemList": [
+											"Option1", "Option2", "Option3"
+										],
+										"attachedValue": [
+											1, 2, 3
+										],
+										"height": 40,
+										"width": 280
+									}
+								]
+							}, {
+								"ctrlType": "DYArea",
+								"layout": "column",
+								"flickable": true,
+								"contentWidth": 600,
+								"contentHeight": 3000,
+								"showTip": true,
+								"rows": 20,
+								"fontFamily": "微软雅黑",
+								"spacing": 10,
+								"columns": 1,
+								"titlePos": "left",
+								"ctrlList": [
+									{
+										"ctrlType": "DYText",
+										"height": 20,
+										"text": "多选选项组1（默认颜色与尺寸）：",
+										"fontSize": 18
+									}, {
+										"ctrlType": "DYArea",
+										"width": 400,
+										"height": 80,
+										"borderWidth": 2,
+										"layout": "grid",
+										"columns": 2,
+										"padding": 5,
+										"rows": 3,
+										"spacing": 20,
+										"rowSpacing": 5,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"borderColor": "#00A1B3",
+										"ctrlList": [
+											{
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项1",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box1",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项2",
+												"checked": true,
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box2",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项3",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box3",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项4",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box4",
+													"destCode": 100
+												},
+												"width": 120
+											}
+										]
+									}, {
+										"ctrlType": "DYText",
+										"height": 20,
+										"text": "多选选项组2（指定颜色）：",
+										"fontSize": 18
+									}, {
+										"ctrlType": "DYArea",
+										"width": 400,
+										"height": 80,
+										"borderWidth": 2,
+										"layout": "grid",
+										"columns": 2,
+										"padding": 5,
+										"rows": 3,
+										"spacing": 20,
+										"rowSpacing": 5,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"borderColor": "#00A1B3",
+										"ctrlList": [
+											{
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项1",
+												"ctrlColor": "#33CC99",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box5-check",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项2",
+												"checked": true,
+												"ctrlColor": "#33CC99",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box6-check",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项3",
+												"ctrlColor": "#33CC99",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box7-check",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项4",
+												"ctrlColor": "#33CC99",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box8-check",
+													"destCode": 100
+												},
+												"width": 120
+											}
+										]
+									}, {
+										"ctrlType": "DYText",
+										"height": 20,
+										"text": "多选选项组3（指定字体颜色）：",
+										"fontSize": 18
+									}, {
+										"ctrlType": "DYArea",
+										"width": 400,
+										"height": 80,
+										"borderWidth": 2,
+										"layout": "grid",
+										"columns": 2,
+										"padding": 5,
+										"rows": 3,
+										"spacing": 20,
+										"rowSpacing": 5,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"borderColor": "#00A1B3",
+										"ctrlList": [
+											{
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项1",
+												"fontColor": "#FFCCFF",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box5-check",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项2",
+												"checked": true,
+												"fontColor": "#FFCCFF",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box6-check",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项3",
+												"fontColor": "#FFCCFF",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box7-check",
+													"destCode": 100
+												},
+												"width": 120
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项4",
+												"fontColor": "#FFCCFF",
+												"height": 30,
+												"dSignal": {
+													"sigId": "check-box8-check",
+													"destCode": 100
+												},
+												"width": 120
+											}
+										]
+									}, {
+										"ctrlType": "DYText",
+										"height": 20,
+										"text": "多选选项组4（改变尺寸与字体大小）：",
+										"fontSize": 18
+									}, {
+										"ctrlType": "DYArea",
+										"width": 400,
+										"height": 100,
+										"borderWidth": 2,
+										"layout": "grid",
+										"columns": 2,
+										"padding": 5,
+										"rows": 3,
+										"spacing": 20,
+										"rowSpacing": 8,
+										"invisibleByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										],
+										"borderColor": "#00A1B3",
+										"ctrlList": [
+											{
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项1",
+												"height": 35,
+												"dSignal": {
+													"sigId": "check-box1",
+													"destCode": 100
+												},
+												"fontSize": 24,
+												"width": 170
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项2",
+												"checked": true,
+												"height": 35,
+												"dSignal": {
+													"sigId": "check-box2",
+													"destCode": 100
+												},
+												"fontSize": 24,
+												"width": 170
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项3",
+												"height": 35,
+												"dSignal": {
+													"sigId": "check-box3",
+													"destCode": 100
+												},
+												"fontSize": 24,
+												"width": 170
+											}, {
+												"ctrlType": "DYCheckBox",
+												"name": "多选选项4",
+												"height": 35,
+												"dSignal": {
+													"sigId": "check-box4",
+													"destCode": 100
+												},
+												"fontSize": 24,
+												"width": 170
+											}
+										]
+									}
+								]
+							}, {
+								"ctrlType": "DYArea",
+								"flickable": true,
+								"contentWidth": 600,
+								"contentHeight": 3000,
+								"showTip": true,
+								"rows": 20,
+								"spacing": 10,
+								"columns": 8,
+								"titlePos": "left",
+								"layout": "grid",
+								"ctrlList": [
+									{
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "not-hold-complete-btn"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "not-hold-complete-btn"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"borderWidth": 1,
+										"borderColor": "#00000000",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "not-hold-complete-btn"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"borderWidth": 1,
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 35,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "完成",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "下载",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "关闭",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "信息",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"name": "完成",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"name": "下载",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"name": "关闭",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"name": "信息",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"name": "完成",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"name": "下载",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"name": "关闭",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"name": "信息",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"name": "完成",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"name": "下载",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"name": "关闭",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"name": "信息",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#555",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"name": "完成",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"name": "下载",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"name": "关闭",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"name": "信息",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#0091cd",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"name": "完成",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"name": "下载",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"name": "关闭",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"name": "信息",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#58181C",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"name": "完成",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"name": "下载",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"name": "关闭",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"name": "信息",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/完成.svg",
+										"name": "完成",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/下载.svg",
+										"name": "下载",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"defaultHold": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/关闭.svg",
+										"name": "关闭",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/信息.svg",
+										"name": "信息",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"defaultHold": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头左.svg",
+										"name": "箭头左",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头右.svg",
+										"name": "箭头右",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"defaultHold": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头上.svg",
+										"name": "箭头上",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}, {
+										"ctrlType": "DYButton",
+										"imagePath": "./images/svgs/test/箭头下.svg",
+										"name": "箭头下",
+										"borderWidth": 1,
+										"borderColor": "#177ddc",
+										"color": "#537b35",
+										"holdStatus": true,
+										"defaultHold": true,
+										"dSignal": {
+											"sigId": "btn-test-signal-two"
+										},
+										"width": 90,
+										"height": 35,
+										"disableByList": [
+											[
+												"btn-test-signal-one"
+											], 
+											[]
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "noteArea",
+				"anchors": {
+					"top": "title.bottom",
+					"topMargin": 30,
+					"left": "leftArea.right",
+					"leftMargin": 10,
+					"right": "parent.right",
+					"rightMargin": 10
+				},
+				"radius": 10,
+				"height": 240,
+				"color": "#555",
+				"rows": 3,
+				"layout": "row",
+				"spacing": 20,
+				"rowSpacing": 5,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYText",
+						"dyName": "noteText",
+						"anchors": {
+							"top": "parent.top",
+							"leftMargin": 15,
+							"left": "parent.left",
+							"right": "parent.right",
+							"bottom": "parent.bottom"
+						},
+						"text": "提示：DYLoader控件可以根据\ndSignal信号内容选择需要加载\n的DYArea，触发的控件形式不\n限，只要能发出对应sigId和对\n应subInfo的dSignal即可。\nDYLoader是用时加载，每次只\n加载一个DYArea，而不会一次\n性全部加载。",
+						"height": 50,
+						"textHAlignment": "left",
+						"textVAlignment": "center",
+						"color": "#00000000",
+						"fontColor": "#dcdcdc",
+						"fontSize": 18,
+						"fontBold": true
+					}
+				]
+			}, {
+				"ctrlType": "DYArea",
+				"dyName": "controllerArea",
+				"anchors": {
+					"left": "noteArea.left",
+					"top": "noteArea.bottom",
+					"topMargin": 10,
+					"right": "noteArea.right",
+					"bottom": "parent.bottom",
+					"bottomMargin": 10
+				},
+				"radius": 10,
+				"color": "#555",
+				"columns": 3,
+				"rows": 6,
+				"layout": "grid",
+				"padding": 20,
+				"spacing": 10,
+				"rowSpacing": 10,
+				"invisibleByList": [
+					[
+						"btn-test-signal-one"
+					], 
+					[]
+				],
+				"ctrlList": [
+					{
+						"ctrlType": "DYButton",
+						"name": "页面1",
+						"dyName": "btn1",
+						"tipText": "加载信号发送测试demo",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "btn1-to-load-page",
+							"subInfo": {
+								"index": 0
+							}
+						},
+						"width": 75,
+						"height": 30,
+						"enableByList": [
+							"sig-show-all-controls"
+						],
+						"disableByList": [
+							"sig-hide-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "页面2",
+						"dyName": "btn2",
+						"tipText": "点击显示下面的控件",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "btn2-to-load-page",
+							"subInfo": {
+								"index": 1
+							}
+						},
+						"width": 75,
+						"height": 30,
+						"enableByList": [
+							"sig-hide-all-controls"
+						],
+						"disableByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "页面3",
+						"dyName": "btn3",
+						"tipText": "点击使不能下面的控件",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "btn3-to-load-page",
+							"subInfo": {
+								"index": 2
+							}
+						},
+						"width": 75,
+						"height": 30,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "页面4",
+						"dyName": "btn4",
+						"tipText": "点击使能下面的控件",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "btn4-to-load-page",
+							"subInfo": {
+								"index": 3
+							}
+						},
+						"width": 75,
+						"height": 30,
+						"enableByList": [
+							"sig-disable-all-controls"
+						],
+						"disableByList": [
+							"sig-enable-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "页面5",
+						"dyName": "btn5",
+						"tipText": "Test button 1",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "btn5-to-load-page",
+							"subInfo": {
+								"index": 4
+							}
+						},
+						"width": 75,
+						"height": 30,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYButton",
+						"name": "页面6",
+						"dyName": "btn6",
+						"tipText": "Test button 2",
+						"borderWidth": 1,
+						"dSignal": {
+							"sigId": "btn6-to-load-page",
+							"subInfo": {
+								"index": 5
+							}
+						},
+						"width": 75,
+						"height": 30,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"color": "#333"
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "radioArea",
+						"tipText": "This is a area contain 4 option",
+						"borderWidth": 1,
+						"anchors": {
+							"top": "comboBox.bottom",
+							"left": "parent.left",
+							"leftMargin": 20,
+							"right": "parent.right",
+							"rightMargin": 32,
+							"topMargin": 20
+						},
+						"radius": 5,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"x": 100,
+						"y": 300,
+						"width": 400,
+						"height": 120,
+						"layout": "grid",
+						"columns": 2,
+						"rows": 3,
+						"padding": 5,
+						"spacing": 20,
+						"rowSpacing": 5,
+						"color": "#00000000",
+						"borderColor": "#dcdcdc",
+						"ctrlList": [
+							{
+								"ctrlType": "DYRadioButton",
+								"name": "页面1",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "btn1-to-load-page",
+									"subInfo": {
+										"index": 0
+									}
+								},
+								"unCheckedByList": [
+									"btn2-to-load-page", "btn3-to-load-page", "btn4-to-load-page", "btn5-to-load-page", "btn6-to-load-page"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "页面2",
+								"checked": true,
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "btn2-to-load-page",
+									"subInfo": {
+										"index": 1
+									}
+								},
+								"unCheckedByList": [
+									"btn1-to-load-page", "btn3-to-load-page", "btn4-to-load-page", "btn5-to-load-page", "btn6-to-load-page"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "页面3",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "btn3-to-load-page",
+									"subInfo": {
+										"index": 2
+									}
+								},
+								"unCheckedByList": [
+									"btn1-to-load-page", "btn2-to-load-page", "btn4-to-load-page", "btn5-to-load-page", "btn6-to-load-page"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "页面4",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "btn4-to-load-page",
+									"subInfo": {
+										"index": 3
+									}
+								},
+								"unCheckedByList": [
+									"btn1-to-load-page", "btn2-to-load-page", "btn3-to-load-page", "btn5-to-load-page", "btn6-to-load-page"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "页面5",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "btn5-to-load-page",
+									"subInfo": {
+										"index": 4
+									}
+								},
+								"unCheckedByList": [
+									"btn1-to-load-page", "btn2-to-load-page", "btn3-to-load-page", "btn4-to-load-page", "btn6-to-load-page"
+								],
+								"width": 120
+							}, {
+								"ctrlType": "DYRadioButton",
+								"name": "页面6",
+								"color": "#00000000",
+								"height": 30,
+								"dSignal": {
+									"sigId": "btn6-to-load-page",
+									"subInfo": {
+										"index": 5
+									}
+								},
+								"unCheckedByList": [
+									"btn1-to-load-page", "btn2-to-load-page", "btn3-to-load-page", "btn4-to-load-page", "btn5-to-load-page"
+								],
+								"width": 120
+							}
+						]
+					}, {
+						"ctrlType": "DYComboBox",
+						"dyName": "comboBox",
+						"name": "ComboBox",
+						"tipText": "A ComboBox Control deliver a more complex signal.",
+						"dSignal": {
+							"sigId": "sig-dyArea-load-page",
+							"destCode": 100
+						},
+						"anchors": {
+							"top": "parent.top",
+							"left": "parent.left",
+							"leftMargin": 20,
+							"right": "parent.right",
+							"rightMargin": 32,
+							"topMargin": 120
+						},
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"itemList": [
+							"页面1", "页面2", "页面3", "页面4", "页面5", "页面6"
+						],
+						"attachedValue": [
+							1, 2, 1, 2, 3, 3
+						],
+						"width": 160,
+						"color": "#00000000"
+					}, {
+						"ctrlType": "DYArea",
+						"dyName": "radioArea",
+						"tipText": "This is a area contain 4 option",
+						"borderWidth": 1,
+						"anchors": {
+							"top": "radioArea.bottom",
+							"left": "parent.left",
+							"leftMargin": 20,
+							"right": "parent.right",
+							"rightMargin": 32,
+							"topMargin": 20
+						},
+						"radius": 5,
+						"enableByList": [
+							"sig-enable-all-controls"
+						],
+						"disableByList": [
+							"sig-disable-all-controls"
+						],
+						"invisibleByList": [
+							"sig-hide-all-controls"
+						],
+						"visibleByList": [
+							"sig-show-all-controls"
+						],
+						"x": 100,
+						"y": 300,
+						"width": 400,
+						"height": 120,
+						"layout": "grid",
+						"columns": 2,
+						"rows": 3,
+						"padding": 10,
+						"spacing": 20,
+						"rowSpacing": 5,
+						"color": "#00000000",
+						"borderColor": "#dcdcdc",
+						"ctrlList": [
+							{
+								"ctrlType": "DYSwitch",
+								"name": "页面1",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "switch1-to-load-page",
+									"subInfo": {
+										"index": 0
+									}
+								},
+								"width": 90
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "页面2",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "switch2-to-load-page",
+									"subInfo": {
+										"index": 1
+									}
+								},
+								"width": 90
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "页面3",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "switch3-to-load-page",
+									"subInfo": {
+										"index": 2
+									}
+								},
+								"width": 90
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "页面4",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "switch4-to-load-page",
+									"subInfo": {
+										"index": 3
+									}
+								},
+								"width": 90
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "页面5",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "switch5-to-load-page",
+									"subInfo": {
+										"index": 4
+									}
+								},
+								"width": 90
+							}, {
+								"ctrlType": "DYSwitch",
+								"name": "页面6",
+								"color": "#00000000",
+								"dSignal": {
+									"sigId": "switch6-to-load-page",
+									"subInfo": {
+										"index": 5
+									}
+								},
+								"width": 90
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

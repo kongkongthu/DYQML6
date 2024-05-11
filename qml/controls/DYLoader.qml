@@ -20,7 +20,7 @@ DObject{
 
     function postProcStatusOnSignal(dSignal){
         if(setSourceByList.includes(dSignal.sigId))
-            generateSubAreaByIndex(dSignal.subInfo.areaIndex);
+            generateSubAreaByIndex(dSignal.subInfo.index);
         if(clearSourceByList.includes(dSignal.sigId))
             clearLoaderSource();
     }

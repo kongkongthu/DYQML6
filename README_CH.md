@@ -28,7 +28,7 @@ DYQML6是在Qt6（目前为V6.6.0，应该可以适用于QT6更高的版本）�
 
 ```bash
 cd your-local-path
-git clone https://wwww.github.com/kongkongthu/DYQML6.git
+git clone https://github.com/kongkongthu/DYQML6.git
 ```
 
 ### 步骤3：运行本项目

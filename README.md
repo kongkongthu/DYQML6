@@ -28,7 +28,7 @@ If not installed, please download the official Qt installer and install it, if a
 
 ```bash
 cd your-local-path
-git clone https://wwww.github.com/kongkongthu/DYQML6.git
+git clone https://github.com/kongkongthu/DYQML6.git
 ```
 
 ### Step 3: Run the project
@@ -36,8 +36,6 @@ git clone https://wwww.github.com/kongkongthu/DYQML6.git
 Use Qt Creator to open the project file CMakeLists.txt, MSVC2019 compiler is recommended, of course, you can also use other versions of the compiler. Set it up and run it. if it runs successfully, you should see the main window below. Proceed to this step, it shows that the program has been successfully run, the following will be simple.
 
 ![主界面](./images/pngs/MainWindow.png)
-
-### 步骤4：加载配置文件
 
 ### Step 4: Loading Configuration Files
 
