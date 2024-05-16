@@ -14,17 +14,16 @@ In simple terms, specify different shortcut keys emitting corresponding `dSignal
 
 The shortcut key configuration is located within the top-level entry point `appSetting`, taking the file `Ctrl-Demo-Button-EN.json` as an example:
 
-复制再试一次分享
 
-![1715850281638](6-Shortcuts and tip message configuration.assets/1715850281638.png)
+![1715850281638](6-Shortcuts%20and%20tip%20message%20configuration.assets/1715850281638.png)
 
 A `shortcutList` is a JSON array, or ordered list, that can internally consist of one or more shortcut configuration objects. In the above example, the `shortcutList` contains three objects corresponding to the keyboard keys A, B and C. Pressing these shortcut keys, DYQML will emit a series of signals corresponding to them using the signaling system, and these signals are defined in the `dSignalList`. In other words, a shortcut key can send out multiple signals instead of only one. For example, the length of the `dSignalList` for the three shortcuts above is 3, so each of them can emit 3 signals. This is to increase the flexibility of the system to adapt to complex business needs, but it is not recommended to configure too many signals for one shortcut, just configure them according to the business needs. Click to expand the `dSignalList` to see the specific signal configuration information:
 
-![1715850350871](6-Shortcuts and tip message configuration.assets/1715850350871.png)
+![1715850350871](6-Shortcuts%20and%20tip%20message%20configuration.assets/1715850350871.png)
 
 The signal body sent within the system is defined as `dSignal`. `dSignal` is a data structure for signal transmission defined in this project, and each `dSignal` must include at least the `sigId` information, which is the identifier of the signal. Without it, the signal will not be sent. Here, we do not need to understand too much about the setup of `dSignal`. It is sufficient to know that if `dSignal` is used, its signal identifier `sigId` must be configured, while the destination code `destCode` and the sub-information `subInfo` are not mandatory. For more detailed information about the system's signals and the signal system, you can refer to the article [Signal system composition](https://github.com/kongkongthu/DYQML6/blob/master/docs/3-Signal%20system%20composition.md).
 
-![1715850390943](6-Shortcuts and tip message configuration.assets/1715850390943.png)
+![1715850390943](6-Shortcuts%20and%20tip%20message%20configuration.assets/1715850390943.png)
 
 The program loads three shortcut keys, namely A, B, and C. When A is clicked, it sends out three signals to the QML interface, with the IDs of these signals being short-cut-A-sig1, short-cut-A-sig2, and short-cut-A-sig3 respectively. Clicking B and C will also send out three different signals accordingly.
 
@@ -91,13 +90,11 @@ For comparison, the JSON source code for the above configuration information is 
 }
 ```
 
-### 
-
 ## II. Configuration of Tip Messages
 
 Tip messages refer to the informational tips that appear when a user hovers their mouse over a control. With DYQML, it is very convenient to add these tips to the interface through the configuration file.
 
-![Animation](6-Shortcuts and tip message configuration.assets/Animation.gif)
+![Animation](6-Shortcuts%20and%20tip%20message%20configuration.assets/Animation.gif)
 
 For DYQML, since all controls are inherited from `DObject` and `tipText` is a property of `DObject`, all controls have the ability to generate tip messages. The system implements the tip information by instantiating `DYToolTip`, and DYQML optimizes the tip information accordingly: 1. Only controls configured with the `tipText` property may generate a `DYToolTip` object, otherwise the `DYToolTip` exists in the state of Component; 2. Only when triggered by a user event, the corresponding `DYToolTip` object will be generated and dynamically destroyed when the user event ends. This ensures that at a certain moment, there is only one `DYToolTip` object in the whole system, which is very necessary to optimize system performance in some special cases.
 
