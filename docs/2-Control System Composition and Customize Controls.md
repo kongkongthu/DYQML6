@@ -118,10 +118,14 @@ On this basis, you can complete the customization of a control and incorporate i
   property string textVAlignment
   ```
 
+  
+
   When assigning attributes in `parseParameters.js`, it is strongly recommended to assign default values to control properties at this step. This is typically achieved using ternary operators. This ensures that if the configuration file does not specify corresponding attributes, the control will default to certain values. Below is the attribute assignment situation for `DYText`:
 
+  
+  
   ```js
-case "DYText":
+  case "DYText":
       paras2 = {
           "text": ctrlJson.text ? ctrlJson.text : "NoText",
           "width": typeof(ctrlJson.width) === "number" ? ctrlJson.width : 100,
@@ -142,8 +146,9 @@ case "DYText":
   - Creating a Component: Use `Qt.createComponent()` to add the control as a Component of `DYArea`.
   - Creating an Object: Add the dynamic creation process in the `generateSubCtrls()` function using `Component.createObject()`.
 
-
 If you're not familiar with QML's Component and Object, don't worry. Just follow the code below. Simply put, Component is similar to the concept of a class, and `createComponent` is akin to importing the class into the current control. Then, `createObject` is used to create a specific Object. According to Qt's definition, a Component won't appear in the interface until an object is created.
+
+
 
 ```js
 // DYArea.qml
@@ -155,6 +160,8 @@ If you're not familiar with QML's Component and Object, don't worry. Just follow
       ctrlObj = dyTextComp.createObject(objParent, paras);
       break;
 ```
+
+
 
 `objParent` is the parent object for the dynamically generated `DYText` object `ctrlObj`, and `paras` are the property values obtained from performing attribute value assignments. `Component.createObject()` dynamically generates a component based on these two parameters.
 
