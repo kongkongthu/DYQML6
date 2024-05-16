@@ -18,92 +18,15 @@ As shown in the following figure:
 
 ### 1.2 Structure and Configuration of `appSetting`
 
-#### 1.2.1 Configuring Window Size
+#### Configuring Window Size
 
 Firstly, `appSetting` is not mandatory, but most projects typically require basic information configuration, unless you do not need to configure window size, shortcuts, etc., in which case you can completely omit the `appSetting` section. As this is a concise tutorial, we will only cover the configuration of window size and shortcuts.
 
-To configure the window size, you add key-value pairs for width and height within the `appSetting`. Setting up shortcuts requires adding an array object named `shortcutList` within the `appSetting`. As shown in the following figure:
+To configure the window size, you add key-value pairs for width and height within the `appSetting`, and as shown below.
 
 ![1713321336075](1-配置文件简单上手.assets/1713321336075.png)
 
-**If the project does not need to configure shortcuts, it is recommended that you skip directly to chapter 1.3 to learn the structure and configuration of the `topArea`. **If you need to configure shortcuts at the beginning, then you can go down in order.
-
-#### 1.2.2 Configuring Shortcuts
-
-Expand the `shortcutList` object to see its structure and configuration information:
-
-![1714694528242](1-配置文件简单上手.assets/1714694528242.png)
-
-A `shortcutList` is a JSON array, or ordered list, that can internally consist of one or more shortcut configuration objects. In the above example, the `shortcutList` contains three objects corresponding to the keyboard keys A, B and C. Pressing these shortcut keys, DYQML will emit a series of signals corresponding to them using the signaling system, and these signals are defined in the `dSignalList`. In other words, a shortcut key can send out multiple signals instead of only one. For example, the length of the `dSignalList` for the three shortcuts above is 3, so each of them can emit 3 signals. This is to increase the flexibility of the system to adapt to complex business needs, but it is not recommended to configure too many signals for one shortcut, just configure them according to the business needs. Click to expand the `dSignalList` to see the specific signal configuration information:
-
-![1714735517540](1-配置文件简单上手.assets/1714735517540.png)
-
-The signal body sent within the system is defined as `dSignal`. `dSignal` is a data structure for signal transmission defined in this project, and each `dSignal` must include at least the `sigId` information, which is the identifier of the signal. Without it, the signal will not be sent. Here, we do not need to understand too much about the setup of `dSignal`. It is sufficient to know that if `dSignal` is used, its signal identifier `sigId` must be configured, while the destination code `destCode` and the sub-information `subInfo` are not mandatory. For more detailed information about the system's signals and the signal system, you can refer to the article [Signal system composition](https://github.com/kongkongthu/DYQML6/blob/master/docs/3-Signal%20system%20composition.md).
-
-The program loads the above configuration information, with the window size set to 1280 by 700 pixels. There are three shortcut keys, corresponding to the keys A, B, and C. When key A is pressed, it will emit three signals to the QML interface, with the signal IDs being **xxxx-xxxx-a1**, **xxxx-xxxx-a2**, and **xxxx-xxxx-a3**, respectively. Similarly, pressing keys B and C will also emit three different signals each.
-
-For comparison, the JSON source code for the above configuration information is as follows:
-
-```json
-"appSetting": {
-    "width": 1280,
-    "height": 700,
-    "shortcutList": [
-        {
-            "keys": "A",
-            "dSignalList": [
-                {
-                    "sigId": "xxxx-xxxx-a1",
-                    "destCode": "100",
-                    "subInfo": ""
-                }, {
-                    "sigId": "xxxx-xxxx-a2",
-                    "destCode": "100",
-                    "subInfo": ""
-                }, {
-                    "sigId": "xxxx-xxxx-a3",
-                    "destCode": "100",
-                    "subInfo": ""
-                }
-            ]
-        }, {
-            "keys": "B",
-            "dSignalList": [
-                {
-                    "sigId": "xxxx-xxxx-b1",
-                    "destCode": "100",
-                    "subInfo": ""
-                }, {
-                    "sigId": "xxxx-xxxx-b2",
-                    "destCode": "100",
-                    "subInfo": ""
-                }, {
-                    "sigId": "xxxx-xxxx-b3",
-                    "destCode": "100",
-                    "subInfo": ""
-                }
-            ]
-        }, {
-            "keys": "C",
-            "dSignalList": [
-                {
-                    "sigId": "xxxx-xxxx-c1",
-                    "destCode": "100",
-                    "subInfo": ""
-                }, {
-                    "sigId": "xxxx-xxxx-c2",
-                    "destCode": "100",
-                    "subInfo": ""
-                }, {
-                    "sigId": "xxxx-xxxx-c3",
-                    "destCode": "100",
-                    "subInfo": ""
-                }
-            ]
-        }
-    ]
-}
-```
+The "shortcutList" in the figure above is the configuration for shortcuts, and the specific content can be referred to in the article of [Shortcuts and tip message configuration](https://github.com/kongkongthu/DYQML6/blob/master/docs/6-Shortcuts%20and%20tip%20message%20configuration.md).
 
 ### 1.3 Configuration of `topArea` and relationship with the `DYArea` Control
 
