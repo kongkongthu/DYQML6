@@ -128,7 +128,7 @@ Since DYQML dynamically generates various controls, how do these controls know w
 
 The biggest feature of the DYQML project is its ability to generate the user interface through configuration files, and it can also generate business logic. Each control that is dynamically generated has all its necessary attributes completed by reading the configuration information in the configuration file, which includes information on what data to obtain. Taking the only data display control in the current program, `DYDataShower`, as an example, it has a property called `hashKeys`. This property is the `dataId` that `DYDataShower` uses to obtain data from the hash table. In the configuration file, we configure a specific `dataId` for a `DYDataShower`, so the control itself knows which data it needs to obtain:
 
-![1714990590927](4-Real-time Data and Unified Timer.assets/1714990590927.png)
+![1714990590927](4-Real-time%20Data%20and%20Unified%20Timer.assets/1714990590927.png)
 
 Here, it is important to emphasize another concept of DYQML designing controls, that is, each control is an independent entity, and each control is responsible for its own internal affairs, which also includes fetching data. That is, each control is responsible for fetching data from the hash table (via `readHash.js`) and for refreshing the interface display. 
 

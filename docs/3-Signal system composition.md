@@ -95,11 +95,11 @@ The signal dispatcher's `emitSignal()` function can determine how to dispatch a 
 For a `dSignal` signal object, only the `sigId` is mandatory. As long as there is a `sigId`, the signal body can be dispatched through the signal dispatcher. `subInfo` is additional data attached to the signal body; you can add any data you want and send it along. It is crucial to understand the encoding meaning of `destCode`. `destCode` stands for destination code, and the signal dispatcher uses `destCode` to distribute the signal. As previously mentioned, DYQML signal dispatching is divided into three types, each for sending signals to the interface, secondary confirmation controls, and the C++ backend. These three can be considered as the signal's destinations.
 The `destCode` is a string composed of three characters, each representing a destination. A '0' indicates that the signal is not sent to that destination, while a '1' indicates that the signal is sent to that destination. For example, "100" means the signal is sent only to the GUI interface and not to the secondary confirmation controls or the C++ backend. "101" means the signal is sent both to the GUI and to the C++ backend, and so on. If `destCode` is not set, it defaults to "100", which sends the signal to the interface.
 
-![destCodeDefinition](3-Signal system composition.assets/destCodeDefinition.jpg)
+![destCodeDefinition](3-Signal%20system%20composition.assets/destCodeDefinition.jpg)
 
 Since all controls that inherit from `DControllerBase` have the `dSignal` property by default, we can configure `dSignal` in the configuration file and load it into the program. Taking the following figure as an example, the control is configured with a signal named "SWITCH-TO-SPECIFIED-FONT-FAMILY", and the `subInfo` is added with the `fontFamily` information set to `Microsoft YaHei`. This `sigId` is a system preset ID, and with it and the font information in `subInfo`, you can switch the font family used throughout the entire interface. You can specify your own `sigId` to trigger your own event responses. In the appendix of this article, the system preset `sigId`s are introduced, which everyone can utilize.
 
-![1714990275164](3-Signal system composition.assets/1714990275164.png)
+![1714990275164](3-Signal%20system%20composition.assets/1714990275164.png)
 
 ### 2.4 C++ Backend Signaling to the Interface
 

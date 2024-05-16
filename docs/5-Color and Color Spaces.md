@@ -116,7 +116,7 @@ In the configuration file that needs to be loaded, add a `colorSpace` JSON objec
 
 In the article of [Signal system composition](https://github.com/kongkongthu/DYQML6/blob/master/docs/3-Signal%20system%20composition.md), it was introduced that there are two preset signals in the system, one of which has a `sigId` of "SET-COLORSPACE". When the system receives a signal containing this `sigId`, it will respond and change the system's color space. The usage is straightforward. For example, in a `DYButton`, we can configure it so that when the user clicks this button, it emits this signal.
 
-![1714990962244](5-Color and Color Spaces.assets/1714990962244.png)
+![1714990962244](5-Color%20and%20Color%20Spaces.assets/1714990962244.png)
 
 ## III. Summary
 
