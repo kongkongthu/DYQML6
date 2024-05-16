@@ -61,8 +61,6 @@ The interface of loading **`Ctrl-Demo-Button-EN.json`** file:
 
 We can try these demos one by one, so we won't list them here.
 
-### 步骤5：默认加载
-
 ### Step 5: Loading by default
 
 Selecting a configuration file every time by using the shortcut Ctrl+O would be cumbersome and would not be in line with the usage of most applications. We can create a new folder named `Default` in the program running directory, and copy a configuration file that need to be loaded by default to this folder (you can also copy the Default folder in the project directory to your program's runtime directory), so that every time the program starts, it will scan the folder for configuration files, and if there are any, the program will load it automatically.
