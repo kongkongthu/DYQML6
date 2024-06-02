@@ -141,6 +141,12 @@ As a container control, `DYArea` is central to organizing page layout and dynami
         <td>No</td>
         <td>The list of subcontrols, too, is not required; at this point he is an empty area that occupies a certain amount of interface space.</td>
     </tr>
+    <tr>
+        <td>flickable</td>
+        <td>false</td>
+        <td>No</td>
+        <td>Whether the region can be moved, this property determines whether to add a Flickable region to DYArea and generate controls onto this Flickable region. This attribute will be detailed in future documents.</td>
+    </tr>
 </table>
 
 Other configurable properties supported by `DYAre`a can be viewed by opening **parseParameters.js** in the js directory and finding the property configurations for the `DYArea` case. All of these control properties have default values within the system, except for `ctrlType`, which is required, or their absence does not affect the generation. So you can configure only the `ctrlType` you need, and you can generate the corresponding control on the interface.

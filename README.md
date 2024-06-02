@@ -2,6 +2,8 @@
 
 [Press for Chinese document](https://github.com/kongkongthu/DYQML6/blob/master/README_CH.md)
 
+[TOC]
+
 ## I. Introduction
 
 The name DYQML is an acronym for Dynamic QML. By loading a pre-written configuration file（a JSON format file）, the program can dynamically generate the corresponding front-end interface, as well as most of the business logic. Through this project, developers can quickly build their own QML front-end applications after mastering the configuration method.
@@ -105,14 +107,32 @@ This project supports the configuration of shortcut keys and interface tips. Exc
 
 There are projects where we don't need to load configuration files by default when the program runs, and we can't select the desired configuration file via the file selection dialog. For example, if we are developing a car management system, we may need to select the corresponding car model on the interface, and then load the corresponding car model interface with the corresponding configuration file. At this point we need to customize the loading of configuration files, see the article for details:[Customize the loading of configuration files](https://github.com/kongkongthu/DYQML6/blob/master/docs/7-Customize%20the%20loading%20of%20configuration%20files.md)
 
-## IV. Future Plans
+## IV. Project Case
+
+The case of this project is the ground software system of the drone company I am currently with. Below are screenshots of the project(The relevant design scheme has been patented):
+
+![Snipaste_2024-05-24_17-51-19](README.assets/Snipaste_2024-05-24_17-51-19.jpg)
+
+![无标题 - 副本](README.assets/无标题 - 副本.png)
+
+The project has proposed and implemented the concept of "configuration defines drones." In addition to specific communication protocols and business logic, the company is also quite open-minded and has the idea of distilling an open-source project for drone ground software, similar to QGroundControl (QGC). However, due to my limited time and capabilities, I cannot achieve this relatively ambitious goal for the time being.
+
+Adopting the concept of "configuration defines drones", we have transformed the paradigm of ground control software development. During the drone debugging process, there will be various uncertainties and new situations, which will also increase or generate a large number of demand improvements. But later on, more than 90% of the demand improvements only require changes to the configuration. This has instantly increased efficiency by more than tenfold.
+
+Increasing efficiency by tenfold means what? It means that all demands can be responded to and resolved in a timely manner, it means that what originally took a month can now be completed in just two or three days, and it means that you have more time to think about longer-term issues and solve more significant problems. 
+
+## VI. Future Plans
 
 The future maintenance and development of this project will mainly focus on the following aspects:
 
 1. Enhance and increase configurable basic capabilities: This is mainly reflected in two aspects. One is to increase and enhance the configuration functions supported on a macro level. The other is to increase and enhance the configurable properties of controls on a micro level.
 2. Develop more configurable controls, in addition to adding basic controls, develop more general controls or industry-specific controls according to project requirements, while ensuring that the project structure remains simple and clear.
 3. Identify bugs, resolve bugs, improve system stability, and enhance system performance.
-4. Manage and maintain updates submitted by other developers.
+
+## VII. Contact Me
+
+email: tianyi98324@126.com
+or: tianyi98324@gmail.com
 
 
 
