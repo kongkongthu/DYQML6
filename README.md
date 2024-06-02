@@ -111,9 +111,9 @@ There are projects where we don't need to load configuration files by default wh
 
 The case of this project is the ground software system of the drone company I am currently with. Below are screenshots of the project(The relevant design scheme has been patented):
 
-![Snipaste_2024-05-24_17-51-19](README.assets/Snipaste_2024-05-24_17-51-19.jpg)
+![Snipaste_2024-05-24_17-51-19](readme.assets/Snipaste_2024-05-24_17-51-19.jpg)
 
-![无标题 - 副本](README.assets/无标题 - 副本.png)
+![](readme.assets/无标题%20-%20副本.png)
 
 The project has proposed and implemented the concept of "configuration defines drones." In addition to specific communication protocols and business logic, the company is also quite open-minded and has the idea of distilling an open-source project for drone ground software, similar to QGroundControl (QGC). However, due to my limited time and capabilities, I cannot achieve this relatively ambitious goal for the time being.
 
