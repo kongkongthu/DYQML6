@@ -214,6 +214,18 @@ The previous example has already introduced the anchor-based positioning method,
 
 In this example, in addition to using the 'row' arrangement method, the `layoutRevers` is also set to true, which causes the child controls to be arranged from right to left. I would like to emphasize the priority of the layout scheme here again. For instance, the three child controls in this example are arranged sequentially by `iconArea` in a row, which is only valid if these three child controls have not been configured with anchor-based layout or absolute positioning layout. This is because the priority of the arrangement layout scheme is the lowest.
 
+### 2.4 Flickable of `DYArea`
+
+Flickable is a handy area pop-up control for QML, and `DYArea` integrates the functionality of Flickable as well. For developers who don't know about the Flickable control, it is recommended to check the Flickable help file first. In `DYArea`, you only need to configure the flickable field in the config file and set the value to true. In the `configFiles` directory, there are a lot of control demo configuration files that use the area flickable feature, such as the `Ctrl-Demo-Button-En.json` file shown below:
+
+![1719742339569](1-配置文件简单上手.assets/1719742339569.png)
+
+The practical effect is that the entire `DYArea` can be dragged by the mouse and have the feature of a Flickable:
+
+![1719742496132](1-配置文件简单上手.assets/1719742496132.png)
+
+Note: If the `DYArea` sets the flickable property to true, the dynamically generated Flickable object replaces the `DYArea` itself and becomes the parent of internally generated controls, including layout controls such as Row and Column.
+
 ## III. Summary
 
 Up to this point, this article has introduced the top-level structure of the JSON configuration file, detailed the basic configuration of `topArea` and `DYArea`, and finally discussed the important attributes of `DYArea`, the types of controls it supports, and the layout schemes it supports. On this basis, using `topArea` as the entry point and `DYArea` as the core element for organizing the interface, we can configure the interface program we desire. In the `configFiles` directory, there are some demos. You can take a closer look at how these configuration files are set up, understand the correspondence between these configuration details and the interface, which will help you configure your own configuration files. Alternatively, you can also make modifications based on these demo files, designing them into the interface you desire. If you wish to complete business logic through configuration, you will need to learn about the signal system in DYQML and the definition of the `dSignal` signal body based on the signal system. This will be introduced in the article [Signal system composition](https://github.com/kongkongthu/DYQML6/blob/master/docs/3-Signal%20system%20composition.md).
