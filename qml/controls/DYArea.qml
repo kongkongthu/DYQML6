@@ -45,6 +45,7 @@ DObject {
     property Component dyCheckBoxComp: Qt.createComponent("DYCheckBox.qml")
     property Component dySwipePageComp: Qt.createComponent("DYSwipePage.qml")
     property Component dySigPopUpComp: Qt.createComponent("DYSigPopUp.qml")
+    property Component dyBarChartComp: Qt.createComponent("DYBarChart.qml")
 
     Component{
         id: flickableComp
@@ -166,6 +167,9 @@ DObject {
                 break;
             case "DYSigPopUp":
                 ctrlObj = dySigPopUpComp.createObject(objParent, paras);
+                break;
+            case "DYBarChart":
+                ctrlObj = dyBarChartComp.createObject(objParent, paras);
                 break;
             }
             if(inAlignment(paras))

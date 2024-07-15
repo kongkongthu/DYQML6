@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 6.4 REQUIRED COMPONENTS Quick)
 
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
 qt_standard_project_setup()
 
 qt_add_executable(appDYQML6
@@ -50,6 +52,7 @@ qt_add_qml_module(appDYQML6
     QML_FILES qml/controls/DYSwipePage.qml
     QML_FILES qml/controls/DYSigPopUp.qml
     QML_FILES qml/js/procColorSpace.js
+    QML_FILES qml/controls/DYBarChart.qml
 #    QML_FILES qml/controls/subControls/InnerItem.qml
 )
 
@@ -66,6 +69,7 @@ set_target_properties(appDYQML6 PROPERTIES
 
 target_link_libraries(appDYQML6
     PRIVATE Qt6::Quick
+    PRIVATE Qt6::Widgets
 )
 
 include(GNUInstallDirs)

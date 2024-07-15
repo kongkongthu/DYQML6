@@ -1,12 +1,14 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QApplication>
 #include <QQmlContext>
 #include "./C++/guifileloader.h"
 #include "./C++/dybackend.h"
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication app(argc, argv);
+//    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
 

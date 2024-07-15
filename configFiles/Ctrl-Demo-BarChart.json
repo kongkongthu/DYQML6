@@ -1,0 +1,274 @@
+{
+	"appSetting": {
+		"shortcutList": [
+			{
+				"keys": "A",
+				"dSignalList": [
+					{
+						"dSignal": {
+							"sigId": "short-cut-A-sig1"
+						}
+					}, {
+						"dSignal": {
+							"sigId": "short-cut-A-sig2"
+						}
+					}, {
+						"dSignal": {
+							"sigId": "short-cut-A-sig3"
+						}
+					}
+				]
+			}, {
+				"keys": "B",
+				"dSignalList": [
+					{
+						"dSignal": {
+							"sigId": "short-cut-A-sig1"
+						}
+					}, {
+						"dSignal": {
+							"sigId": "short-cut-A-sig2"
+						}
+					}, {
+						"dSignal": {
+							"sigId": "short-cut-A-sig3"
+						}
+					}
+				]
+			}, {
+				"keys": "C",
+				"dSignalList": [
+					{
+						"dSignal": {
+							"sigId": "short-cut-A-sig1"
+						}
+					}, {
+						"dSignal": {
+							"sigId": "short-cut-A-sig2"
+						}
+					}, {
+						"dSignal": {
+							"sigId": "short-cut-A-sig3"
+						}
+					}
+				]
+			}
+		]
+	},
+	"topArea": {
+		"flickable": false,
+		"contentWidth": 600,
+		"contentHeight": 3000,
+		"showTip": true,
+		"rows": 20,
+		"fontFamily": "Microsoft YaHei",
+		"spacing": 10,
+		"dyName": "flickable1",
+		"leftPadding": 30,
+		"topPadding": 60,
+		"columns": 3,
+		"titlePos": "left",
+		"layout": "grid",
+		"ctrlList": [
+			{
+				"ctrlType": "DYText",
+				"anchors": {
+					"horizontalCenter": "parent.horizontalCenter",
+					"top": "parent.top",
+					"topMargin": 10
+				},
+				"textHAlignment": "center",
+				"text": "BarCharts",
+				"width": 300,
+				"height": 30,
+				"fontSize": 28
+			}, {
+				"ctrlType": "DYBarChart",
+				"width": 300,
+				"height": 300,
+				"color": "#fff",
+				"fontColor": "#555",
+				"barName": "verticalBar",
+				"barType": "vBar",
+				"barSetList": [
+					{
+						"label": "apple",
+						"guidList": [
+							"fake-data-guid1", "fake-data-guid2", "fake-data-guid3", "fake-data-guid4"
+						]
+					}, {
+						"label": "banana",
+						"guidList": [
+							"fake-data-guid5", "fake-data-guid6", "fake-data-guid7", "fake-data-guid8"
+						]
+					}, {
+						"label": "pear",
+						"guidList": [
+							"fake-data-guid9", "fake-data-guid10", "fake-data-guid11", "fake-data-guid12"
+						]
+					}
+				],
+				"categorieList": [
+					"S1", "S2", "S3", "S4"
+				],
+				"min": 0,
+				"max": 100
+			}, {
+				"ctrlType": "DYBarChart",
+				"width": 300,
+				"height": 300,
+				"color": "#fff",
+				"fontColor": "#555",
+				"barName": "verticalPercentBar",
+				"barType": "vPercentBar",
+				"barSetList": [
+					{
+						"label": "apple",
+						"guidList": [
+							"fake-data-guid1", "fake-data-guid2", "fake-data-guid3", "fake-data-guid4"
+						]
+					}, {
+						"label": "banana",
+						"guidList": [
+							"fake-data-guid5", "fake-data-guid6", "fake-data-guid7", "fake-data-guid8"
+						]
+					}, {
+						"label": "pear",
+						"guidList": [
+							"fake-data-guid9", "fake-data-guid10", "fake-data-guid11", "fake-data-guid12"
+						]
+					}
+				],
+				"categorieList": [
+					"S1", "S2", "S3", "S4"
+				],
+				"min": 0,
+				"max": 100
+			}, {
+				"ctrlType": "DYBarChart",
+				"width": 300,
+				"height": 300,
+				"color": "#fff",
+				"fontColor": "#555",
+				"barName": "verticalStackedBar",
+				"barType": "vStackedBar",
+				"barSetList": [
+					{
+						"label": "apple",
+						"guidList": [
+							"fake-data-guid1", "fake-data-guid2", "fake-data-guid3", "fake-data-guid4"
+						]
+					}, {
+						"label": "banana",
+						"guidList": [
+							"fake-data-guid5", "fake-data-guid6", "fake-data-guid7", "fake-data-guid8"
+						]
+					}, {
+						"label": "pear",
+						"guidList": [
+							"fake-data-guid9", "fake-data-guid10", "fake-data-guid11", "fake-data-guid12"
+						]
+					}
+				],
+				"categorieList": [
+					"S1", "S2", "S3", "S4"
+				],
+				"min": 0,
+				"max": 300
+			}, {
+				"ctrlType": "DYBarChart",
+				"width": 300,
+				"height": 300,
+				"color": "#fff",
+				"fontColor": "#555",
+				"barName": "horizontalBar",
+				"barType": "hBar",
+				"barSetList": [
+					{
+						"label": "apple",
+						"guidList": [
+							"fake-data-guid1", "fake-data-guid2", "fake-data-guid3", "fake-data-guid4"
+						]
+					}, {
+						"label": "banana",
+						"guidList": [
+							"fake-data-guid5", "fake-data-guid6", "fake-data-guid7", "fake-data-guid8"
+						]
+					}, {
+						"label": "pear",
+						"guidList": [
+							"fake-data-guid9", "fake-data-guid10", "fake-data-guid11", "fake-data-guid12"
+						]
+					}
+				],
+				"categorieList": [
+					"S1", "S2", "S3", "S4"
+				],
+				"min": 0,
+				"max": 100
+			}, {
+				"ctrlType": "DYBarChart",
+				"width": 300,
+				"height": 300,
+				"color": "#fff",
+				"fontColor": "#555",
+				"barName": "horizontalPercentBar",
+				"barType": "hPercentBar",
+				"barSetList": [
+					{
+						"label": "apple",
+						"guidList": [
+							"fake-data-guid1", "fake-data-guid2", "fake-data-guid3", "fake-data-guid4"
+						]
+					}, {
+						"label": "banana",
+						"guidList": [
+							"fake-data-guid5", "fake-data-guid6", "fake-data-guid7", "fake-data-guid8"
+						]
+					}, {
+						"label": "pear",
+						"guidList": [
+							"fake-data-guid9", "fake-data-guid10", "fake-data-guid11", "fake-data-guid12"
+						]
+					}
+				],
+				"categorieList": [
+					"S1", "S2", "S3", "S4"
+				],
+				"min": 0,
+				"max": 100
+			}, {
+				"ctrlType": "DYBarChart",
+				"width": 300,
+				"height": 300,
+				"color": "#fff",
+				"fontColor": "#555",
+				"barName": "horizontalStackedBar",
+				"barType": "hStackedBar",
+				"barSetList": [
+					{
+						"label": "apple",
+						"guidList": [
+							"fake-data-guid1", "fake-data-guid2", "fake-data-guid3", "fake-data-guid4"
+						]
+					}, {
+						"label": "banana",
+						"guidList": [
+							"fake-data-guid5", "fake-data-guid6", "fake-data-guid7", "fake-data-guid8"
+						]
+					}, {
+						"label": "pear",
+						"guidList": [
+							"fake-data-guid9", "fake-data-guid10", "fake-data-guid11", "fake-data-guid12"
+						]
+					}
+				],
+				"categorieList": [
+					"S1", "S2", "S3", "S4"
+				],
+				"min": 0,
+				"max": 300
+			}
+		]
+	}
+}

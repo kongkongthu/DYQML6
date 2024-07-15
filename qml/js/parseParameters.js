@@ -346,6 +346,22 @@ function parseParas(parentObj, ctrlJson) {
 
         };
         break;
+    case "DYBarChart":
+        paras2 = {
+            "width": typeof(ctrlJson.width) === "number" ? ctrlJson.width : 400,
+            "height": typeof(ctrlJson.height) === "number" ? ctrlJson.height : 300,
+            "barType": ctrlJson.barType ? ctrlJson.barType : "vBar",
+            "barName": ctrlJson.barName ? ctrlJson.barName : "barName",
+            "barSetList": ctrlJson.barSetList, // barSetList = [{label: 'labelName', guidList: []}, {}, ...]
+            "categorieList": ctrlJson.categorieList, // axisCategories.length should equals to the above of guidList.length
+            "cTypeGuid": ctrlJson.cTypeGuid,
+            "min": ctrlJson.min,
+            "max": ctrlJson.max,
+            "fontColor": ctrlJson.fontColor ? ctrlJson.fontColor : "#fff",
+            "gridColor": ctrlJson.gridColor ? ctrlJson.gridColor : "#88333333",
+        }
+
+        break;
     }
     if(paras1.dyName==="btn2")
         console.log(`btn2 color = ${paras1.color}`)
